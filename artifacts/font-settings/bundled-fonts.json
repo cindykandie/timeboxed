@@ -1,0 +1,25 @@
+{
+  "apkSha256": "d7c50ed350b78d83dd4a5c7a8393732638a8d9d02a06ac47df3e96314d73bb27",
+  "verifiedOriginalFonts": [
+    {
+      "apkEntry": "res/Qy.ttf",
+      "source": "assets/fonts/clash-display/Fonts/TTF/ClashDisplay-Variable.ttf",
+      "sha256": "c1c02f275e8863cfa4d3d45aed4803277aae8197dcca473969a573c1a84edd92"
+    },
+    {
+      "apkEntry": "res/Tj.ttf",
+      "source": "assets/fonts/satoshi/Fonts/TTF/Satoshi-Variable.ttf",
+      "sha256": "02ad131926aa46d282b6af73ad2bcaecb0ec6ef3b830a2f08dcabef44f1140ff"
+    },
+    {
+      "apkEntry": "res/aQ.ttf",
+      "source": "assets/fonts/cabinet-grotesk/Fonts/TTF/CabinetGrotesk-Variable.ttf",
+      "sha256": "7414b4594ad71ac3d236a9f8d4ab6c45c39582893b22c94e2647694fe9e29b5e"
+    },
+    {
+      "apkEntry": "res/ap.ttf",
+      "source": "assets/fonts/satoshi/Fonts/TTF/Satoshi-VariableItalic.ttf",
+      "sha256": "cfe8f600aa33dc80075b319a16ae663df30c7901b6cb332e70ea7dfb9c08b6ad"
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "customConditions": ["react-native", "react-native-legacy-deep-imports"],
+    "allowImportingTsExtensions": true,
+    "types": ["node", "react"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }

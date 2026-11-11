@@ -39,3 +39,12 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Fontshare permits app embedding, but not standalone font redistribution.
+# Keep supplied binaries/archives local; retain licences and the inventory.
+assets/fonts/**/*.zip
+assets/fonts/**/*.otf
+assets/fonts/**/*.ttf
+assets/fonts/**/*.woff
+assets/fonts/**/*.woff2
+assets/fonts/**/*.eot

@@ -1,25 +1,31 @@
 {
   "expo": {
-    "name": "timeboxed",
+    "name": "TimeBoxed",
     "slug": "timeboxed",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
+    "scheme": "timeboxed",
+    "experiments": {
+      "typedRoutes": true
     },
+    "platforms": ["android"],
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
+      "package": "com.timeboxed.app",
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-router",
+      "./plugins/with-pointer-events.cjs",
+      [
+        "@react-native-tvos/config-tv",
+        {
+          "isTV": true,
+          "androidTVRequired": true,
+          "androidTVBanner": "./assets/tv-banner.png",
+          "androidTVIcon": "./assets/icon.png"
+        }
+      ]
+    ]
   }
 }

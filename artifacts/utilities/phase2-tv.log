@@ -1,0 +1,57 @@
+
+> timeboxed@1.0.0 test:tv
+> node --experimental-strip-types --test --test-concurrency=1 tests/tv/*.test.ts
+
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-AVo5In/hierarchy.zip: 1 file pushed, 0 skipped. 10.4 MB/s (2353 bytes in 0.000s)
+(node:6810) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/calculator.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Calculator performs real remote keypad calculations and preserves its session across navigation (46797.602997ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-uslToB/hierarchy.zip: 1 file pushed, 0 skipped. 10.2 MB/s (2353 bytes in 0.000s)
+(node:7074) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/countdown.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-TTwuAo/hierarchy.zip: 1 file pushed, 0 skipped. 8.3 MB/s (2353 bytes in 0.000s)
+Warning: Activity not started, its current task has been brought to the front
+✔ Countdown remote creation, editing, multiple events, restart/foreground accuracy and confirmed deletion (271044.654895ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-nZNJgW/hierarchy.zip: 1 file pushed, 0 skipped. 10.4 MB/s (2353 bytes in 0.000s)
+(node:8171) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ shared adaptive rail and existing Timer/Clock regressions on Android TV
+  ✔ dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons (4922.414898ms)
+  ✔ Up/Down transfers exactly one label through all six items without shifting the rail (28918.617985ms)
+  ✔ pointer focus transfers the single label instead of revealing a second hovered label (22497.128771ms)
+  ✔ 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus (27940.304601ms)
+  ✔ Calculator, Countdown and World Clocks have the same rail and predictable Back (50212.571887ms)
+  ✔ Timer retains all seven presets and compact/focused rail states without overlap (49484.642884ms)
+  ✔ Home preserves a running Timer; reopening reconciles its deadline (23583.710067ms)
+  ✔ Back preserves a paused Timer; Resume/Reset controls remain reachable (18266.998969ms)
+  ✔ Clock retains local time/date/timezone and has non-overlapping compact/focused rail states (63691.296996ms)
+  ✔ remote 12/24-hour settings still select, format and save the chosen value (14154.975354ms)
+  ✔ ambient keeps the complete rail visible, updates time, and Select restores Clock content focus (27229.287843ms)
+  ✔ Home and Back from ambient/Clock return to dashboard with Clock focus restored (48841.332765ms)
+Warning: Activity not started, its current task has been brought to the front
+  ✔ foreground recovery refreshes device time and the rail remains usable (22688.218838ms)
+  ✔ format survives restart and dashboard/Clock share the same saved preference (34124.739753ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-T3vTMu/hierarchy.zip: 1 file pushed, 0 skipped. 6.5 MB/s (2353 bytes in 0.000s)
+  ✔ reduced motion preserves single-label focus, compact timeout, Home and ambient controls (43721.027235ms)
+✔ shared adaptive rail and existing Timer/Clock regressions on Android TV (499792.535936ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-6K0125/hierarchy.zip: 1 file pushed, 0 skipped. 10.1 MB/s (2353 bytes in 0.000s)
+✔ Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer (96505.682145ms)
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+✔ direct cross-utility rail navigation preserves the same running Timer session (113935.91161ms)
+✔ bright/dark local image fixtures preserve single-label contrast, full rail and device clock (29328.682336ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1058469.423289

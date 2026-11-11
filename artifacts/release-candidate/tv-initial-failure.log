@@ -1,0 +1,51 @@
+
+> timeboxed@1.0.0 test:tv
+> node --experimental-strip-types --test --test-concurrency=1 tests/tv/*.test.ts
+
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-TxS2tE/hierarchy.zip: 1 file pushed, 0 skipped. 11.1 MB/s (2353 bytes in 0.000s)
+(node:21448) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/calculator.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✖ Calculator performs real remote keypad calculations and preserves its session across navigation (97668.435976ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-x4PIUd/hierarchy.zip: 1 file pushed, 0 skipped. 10.9 MB/s (2353 bytes in 0.000s)
+(node:21968) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/countdown.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-zog054/hierarchy.zip: 1 file pushed, 0 skipped. 7.8 MB/s (2353 bytes in 0.000s)
+Warning: Activity not started, its current task has been brought to the front
+✔ Countdown remote creation, editing, multiple events, restart/foreground accuracy and confirmed deletion (371861.198215ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-mgnYvJ/hierarchy.zip: 1 file pushed, 0 skipped. 7.5 MB/s (2353 bytes in 0.000s)
+(node:23311) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✖ tests/tv/dashboard.test.ts (28000.878167ms)
+✖ tests/tv/worldClocks.test.ts
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 2
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 498208.049639
+
+✖ failing tests:
+
+test at tests/tv/calculator.test.ts:5:1
+✖ Calculator performs real remote keypad calculations and preserves its session across navigation (97668.435976ms)
+  Error: Cannot reach Clear entry using D-pad
+      at focusControl (file:///Users/cindykandie/timeboxed/tests/tv/driver.ts:76:9)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/calculator.test.ts:14:3)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+
+test at tests/tv/dashboard.test.ts:1:1
+✖ tests/tv/dashboard.test.ts (28000.878167ms)
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/tv/worldClocks.test.ts:1:1
+✖ tests/tv/worldClocks.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'

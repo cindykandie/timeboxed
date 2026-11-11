@@ -1,0 +1,21 @@
+TAP version 13
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-by7DFR/hierarchy.zip: 1 file pushed, 0 skipped. 8.3 MB/s (2353 bytes in 0.000s)
+# (node:32719) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/timerControls.test.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Timer icon controls retain accessible names, remote actions, navigation state and completion
+ok 1 - Timer icon controls retain accessible names, remote actions, navigation state and completion
+  ---
+  duration_ms: 273261.448434
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 273474.085902

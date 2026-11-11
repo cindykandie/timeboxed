@@ -1,0 +1,96 @@
+
+> timeboxed@1.0.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+(node:37115) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/artwork.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ artwork selection uses registered local entries and falls back for unknown IDs (2.595283ms)
+✔ artwork configuration fails clearly when its default entry is missing (1.912591ms)
+(node:37116) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/calculator.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ calculator supports arithmetic and standard precedence without eval (38.599016ms)
+✔ decimal arithmetic is exact, repeated dots are ignored, and negative entries/sign changes work (1.004898ms)
+✔ percent is current value divided by 100; it also works with a result (1.63261ms)
+✔ display rounding is marked and does not alter the exact value used in consecutive calculations (3.983628ms)
+✔ AC, CE, backspace and replacing an operator preserve valid editing state (0.970377ms)
+✔ division by zero, incomplete expressions and malformed input are safe and recoverable (1.449282ms)
+✔ large/small values use sensible scientific notation and computations are bounded (25.881724ms)
+(node:37117) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/clock.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ clock displays local time, full date and the configured timezone (160.103513ms)
+✔ clock updates the date at local midnight and follows timezone daylight saving rules (5.747836ms)
+✔ clock rebuilds formatters when local timezone settings change (2.900494ms)
+✔ 12-hour midnight/noon include AM/PM, 24-hour midnight is 00, and switching formats rebuilds the cache (19.888788ms)
+✔ default clock reader uses the runtime device locale/timezone and a valid current time (6.058345ms)
+✔ date and day period use the selected locale (3.24821ms)
+✔ clock refreshes immediately, uses wall time after delays, and disposes its interval (2.694315ms)
+✔ focused lifecycle refreshes on foreground, owns one interval/listener and cleans up idempotently (6.367742ms)
+✔ mounting a clock while backgrounded does no refresh work until active (11.803606ms)
+(node:37118) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/countdown.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Countdown uses timestamps for exact days/hours/minutes/seconds and keeps expired values at zero (69.910408ms)
+✔ Countdown interprets local calendar fields, rejects invalid dates/times and DST gaps (12.884763ms)
+✔ Countdown creates multiple events, edits without replacing identity, persists restart and deletes (2.232624ms)
+✔ Countdown validates corrupted storage, salvages valid records and reports disk failures without losing data (1.454276ms)
+✔ wall time refreshes after suspension, owns at most one interval/listener, and cleans up (1.157173ms)
+(node:37119) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/navigation.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ rail becomes compact at 10 seconds, keeps one timeout, and remote activity renews the full idle period (62.57106ms)
+✔ background pause and route disposal cancel rail work; stale callbacks cannot compact a new interaction (0.706781ms)
+(node:37120) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/preferences.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ missing preferences default to 24-hour; both formats survive a fresh store using persisted JSON (35.032213ms)
+✔ corrupt, unsupported and incomplete preferences recover to 24-hour without crashing (1.137612ms)
+✔ storage failures keep the clock usable and allow saving to be retried (0.960224ms)
+✔ preference notifications skip unchanged choices and unsubscribe cleanly (0.634381ms)
+(node:37121) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/store.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ interval exists only while running; pause, reset, completion and cleanup dispose it (3.134781ms)
+✔ screen blur/background cleanup preserves the deadline and reconciles on return (0.559148ms)
+✔ a paused timer remains paused across navigation and backgrounding (78.933996ms)
+✔ sub-second updates do not notify unnecessarily and unsubscribe removes listeners (0.548316ms)
+(node:37131) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/timer.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ presets and custom boundary durations are valid; invalid durations are rejected (11.11441ms)
+✔ display rounds up, supports hours, and never displays negative time (0.637897ms)
+✔ late ticks use elapsed time rather than counting interval callbacks (0.738678ms)
+✔ pause captures exact milliseconds; resume excludes paused time (0.732993ms)
+✔ background expiry and a late Pause cannot revive a completed timer (9.978727ms)
+✔ reset stops the countdown and restores its duration in every state (6.467121ms)
+✔ invalid transitions cannot extend the deadline or overwrite a session (0.569327ms)
+(node:37132) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/worldClocks.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ World Clocks has all 14 curated IANA cities and sensible defaults including Nairobi (142.063835ms)
+✔ Nairobi, London, New York and Tokyo format one instant with their IANA rules (11.234943ms)
+✔ World Clocks displays date differences and follows midnight for each city (0.93498ms)
+✔ World Clocks follows northern and southern daylight-saving transitions without fixed offsets (2.49715ms)
+✔ World Clocks shares Clock preference formatting and handles bad timezone identifiers per city (11.276531ms)
+✔ selected cities add/remove without duplicates, persist restart and retain an intentionally empty selection (1.631841ms)
+✔ World Clocks recovers corrupt/missing selections and retains saved cities after failed writes (1.07925ms)
+✔ one wall-clock subscription updates multiple city clocks and foreground return reads fresh time (5.829978ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1753.681485

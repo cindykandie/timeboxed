@@ -1,0 +1,103 @@
+
+> timeboxed@1.0.0 test:tv
+> node --experimental-strip-types --test --test-concurrency=1 tests/tv/*.test.ts
+
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-8tphzW/hierarchy.zip: 1 file pushed, 0 skipped. 10.3 MB/s (2353 bytes in 0.000s)
+(node:56405) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/calculator.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Calculator performs real remote keypad calculations and preserves its session across navigation (49694.437114ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-UGnaC5/hierarchy.zip: 1 file pushed, 0 skipped. 8.5 MB/s (2353 bytes in 0.000s)
+(node:56580) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ shared adaptive rail and existing Timer/Clock regressions on Android TV
+  ✔ dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons (6664.474059ms)
+  ✔ Up/Down transfers exactly one label through all six items without shifting the rail (37305.31324ms)
+  ✔ pointer focus transfers the single label instead of revealing a second hovered label (29833.128136ms)
+  ✔ 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus (33572.694005ms)
+  ✔ Calculator, Countdown and World Clocks have lightweight routes with the same rail and predictable Back (68095.716617ms)
+  ✔ Timer retains all seven presets and compact/focused rail states without overlap (54598.837578ms)
+  ✔ Home preserves a running Timer; reopening reconciles its deadline (26880.344012ms)
+  ✔ Back preserves a paused Timer; Resume/Reset controls remain reachable (20430.972322ms)
+  ✔ Clock retains local time/date/timezone and has non-overlapping compact/focused rail states (75184.105883ms)
+  ✔ remote 12/24-hour settings still select, format and save the chosen value (18748.81418ms)
+  ✔ ambient keeps the complete rail visible, updates time, and Select restores Clock content focus (43058.958539ms)
+  ✔ Home and Back from ambient/Clock return to dashboard with Clock focus restored (94986.480491ms)
+Warning: Activity not started, its current task has been brought to the front
+  ✔ foreground recovery refreshes device time and the rail remains usable (45465.970933ms)
+  ✔ format survives restart and dashboard/Clock share the same saved preference (58603.761283ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-BitGYR/hierarchy.zip: 1 file pushed, 0 skipped. 7.9 MB/s (2353 bytes in 0.000s)
+  ✔ reduced motion preserves single-label focus, compact timeout, Home and ambient controls (61740.756948ms)
+✔ shared adaptive rail and existing Timer/Clock regressions on Android TV (696473.302826ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-HUvkGs/hierarchy.zip: 1 file pushed, 0 skipped. 6.9 MB/s (2353 bytes in 0.000s)
+✔ Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer (159258.562514ms)
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+✖ direct cross-utility rail navigation preserves the same running Timer session (218363.182643ms)
+✖ bright/dark local image fixtures preserve single-label contrast, full rail and device clock (29845.454689ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 18
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1154123.890709
+
+✖ failing tests:
+
+test at tests/tv/dashboard.test.ts:344:1
+✖ direct cross-utility rail navigation preserves the same running Timer session (218363.182643ms)
+  Error: spawnSync adb ETIMEDOUT
+      at Object.spawnSync (node:internal/child_process:1120:20)
+      at spawnSync (node:child_process:911:24)
+      at execFileSync (node:child_process:954:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at snapshot (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:21:18)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:350:15)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    errno: -60,
+    code: 'ETIMEDOUT',
+    syscall: 'spawnSync adb',
+    path: 'adb',
+    spawnargs: [ '-s', 'emulator-5554', 'shell', 'uiautomator', 'runtest', 'timeboxed-hierarchy.jar', '-c', 'TimeBoxedHierarchyDump', '-s' ],
+    error: Error: spawnSync adb ETIMEDOUT
+        at Object.spawnSync (node:internal/child_process:1120:20)
+        at spawnSync (node:child_process:911:24)
+        at execFileSync (node:child_process:954:15)
+        at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+        at snapshot (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:21:18)
+        at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:350:15)
+        at async Test.run (node:internal/test_runner/test:1113:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:788:7),
+    status: null,
+    signal: 'SIGTERM',
+    output: [ null, 'Warning: This version of UI Automator is deprecated. New tests should be written using\nUI Automator 2.0 which is available as part of the Android Testing Support Library.\nSee https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html\nfor more details.\n.F\n', '' ],
+    pid: 59110,
+    stdout: 'Warning: This version of UI Automator is deprecated. New tests should be written using\nUI Automator 2.0 which is available as part of the Android Testing Support Library.\nSee https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html\nfor more details.\n.F\n',
+    stderr: ''
+  }
+
+test at tests/tv/dashboard.test.ts:359:1
+✖ bright/dark local image fixtures preserve single-label contrast, full rail and device clock (29845.454689ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(byId(snapshot(), 'dashboard-artwork'))
+  
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:362:12)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

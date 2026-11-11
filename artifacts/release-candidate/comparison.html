@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TimeBoxed — Release candidate comparison</title>
+<style>
+  :root { color-scheme: dark; }
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 1800px; margin: 40px auto; padding: 0 24px; }
+  h1 { font-size: 28px; font-weight: 500; } h2 { margin-top: 40px; font-size: 20px; font-weight: 500; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  figure { margin: 0; } figcaption { opacity: .7; margin-bottom: 8px; }
+  img { display: block; width: 100%; height: auto; } a { color: inherit; }
+  @media (max-width: 800px) { .pair { grid-template-columns: 1fr; } }
+</style>
+<h1>TimeBoxed — Release candidate UI</h1>
+<p>Actual Android TV captures. Click an image for its original 1920 × 1080 file.</p>
+<h2>Timer</h2><div class="pair">
+  <figure><figcaption>Before</figcaption><a href="before/timer.png"><img src="before/timer.png" width="1920" height="1080" alt="Timer before refinement"></a></figure>
+  <figure><figcaption>After</figcaption><a href="timer-compact.png"><img src="timer-compact.png" width="1920" height="1080" alt="Timer with focused controls and balanced presets"></a></figure>
+</div>
+<h2>Clock</h2><div class="pair">
+  <figure><figcaption>Before</figcaption><a href="before/clock.png"><img src="before/clock.png" width="1920" height="1080" alt="Clock before refinement"></a></figure>
+  <figure><figcaption>After</figcaption><a href="clock-compact.png"><img src="clock-compact.png" width="1920" height="1080" alt="Clock with compact format controls and Ambient action"></a></figure>
+</div>
+<h2>Calculator</h2><div class="pair">
+  <figure><figcaption>Before</figcaption><a href="before/calculator.png"><img src="before/calculator.png" width="1920" height="1080" alt="Calculator before refinement"></a></figure>
+  <figure><figcaption>After</figcaption><a href="calculator.png"><img src="calculator.png" width="1920" height="1080" alt="Calculator with larger result beside CE"></a></figure>
+</div>
+<h2>Countdown detail</h2><div class="pair">
+  <figure><figcaption>Before</figcaption><a href="before/countdown.png"><img src="before/countdown.png" width="1920" height="1080" alt="Countdown with permanent edit and delete controls"></a></figure>
+  <figure><figcaption>After</figcaption><a href="countdown.png"><img src="countdown.png" width="1920" height="1080" alt="Countdown with contextual actions menu"></a></figure>
+</div>
+<h2>Countdown empty and saved events</h2><div class="pair">
+  <figure><figcaption>Empty — new capture</figcaption><a href="countdown-empty.png"><img src="countdown-empty.png" width="1920" height="1080" alt="Intentional Countdown empty state"></a></figure>
+  <figure><figcaption>Two saved events — new capture</figcaption><a href="countdown-list.png"><img src="countdown-list.png" width="1920" height="1080" alt="Countdown list with names remaining time and dates"></a></figure>
+</div>
+<h2>World Clocks</h2><div class="pair">
+  <figure><figcaption>Before</figcaption><a href="before/world-clocks.png"><img src="before/world-clocks.png" width="1920" height="1080" alt="World Clocks with permanent removal controls and timezones"></a></figure>
+  <figure><figcaption>After — entries idle</figcaption><a href="world-clocks.png"><img src="world-clocks.png" width="1920" height="1080" alt="World Clocks with dominant times and quiet secondary details"></a></figure>
+</div>
+<h2>Contextual management</h2><div class="pair">
+  <figure><figcaption>Countdown actions</figcaption><a href="countdown-actions.png"><img src="countdown-actions.png" width="1920" height="1080" alt="Countdown Edit Delete and Cancel actions"></a></figure>
+  <figure><figcaption>Only the focused city reveals management</figcaption><a href="world-clocks-focused.png"><img src="world-clocks-focused.png" width="1920" height="1080" alt="Focused Nairobi entry with small trash action and timezone"></a></figure>
+</div>
+</html>

@@ -1,0 +1,136 @@
+TAP version 13
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-SEZ9E9/hierarchy.zip: 1 file pushed, 0 skipped. 11.2 MB/s (2353 bytes in 0.000s)
+# (node:29540) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: shared adaptive rail and existing Timer/Clock regressions on Android TV
+    # Subtest: dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons
+    ok 1 - dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons
+      ---
+      duration_ms: 5403.281581
+      type: 'test'
+      ...
+    # Subtest: Up/Down transfers exactly one label through all six items without shifting the rail
+    ok 2 - Up/Down transfers exactly one label through all six items without shifting the rail
+      ---
+      duration_ms: 29092.540749
+      type: 'test'
+      ...
+    # Subtest: pointer focus transfers the single label instead of revealing a second hovered label
+    ok 3 - pointer focus transfers the single label instead of revealing a second hovered label
+      ---
+      duration_ms: 21345.669694
+      type: 'test'
+      ...
+    # Subtest: 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus
+    ok 4 - 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus
+      ---
+      duration_ms: 26598.72779
+      type: 'test'
+      ...
+    # Subtest: Calculator, Countdown and World Clocks have the same rail and predictable Back
+    ok 5 - Calculator, Countdown and World Clocks have the same rail and predictable Back
+      ---
+      duration_ms: 49945.149674
+      type: 'test'
+      ...
+    # Subtest: Timer retains all seven presets and compact/focused rail states without overlap
+    ok 6 - Timer retains all seven presets and compact/focused rail states without overlap
+      ---
+      duration_ms: 136032.001298
+      type: 'test'
+      ...
+    # Subtest: Home preserves a running Timer; reopening reconciles its deadline
+    ok 7 - Home preserves a running Timer; reopening reconciles its deadline
+      ---
+      duration_ms: 22960.798339
+      type: 'test'
+      ...
+    # Subtest: Back preserves a paused Timer; Resume/Reset controls remain reachable
+    ok 8 - Back preserves a paused Timer; Resume/Reset controls remain reachable
+      ---
+      duration_ms: 17472.58318
+      type: 'test'
+      ...
+    # Subtest: Clock retains local time/date/timezone and has non-overlapping compact/focused rail states
+    ok 9 - Clock retains local time/date/timezone and has non-overlapping compact/focused rail states
+      ---
+      duration_ms: 63863.488328
+      type: 'test'
+      ...
+    # Subtest: remote 12/24-hour settings still select, format and save the chosen value
+    ok 10 - remote 12/24-hour settings still select, format and save the chosen value
+      ---
+      duration_ms: 14024.96478
+      type: 'test'
+      ...
+    # Subtest: ambient keeps the complete rail visible, updates time, and Select restores Clock content focus
+    ok 11 - ambient keeps the complete rail visible, updates time, and Select restores Clock content focus
+      ---
+      duration_ms: 26813.869321
+      type: 'test'
+      ...
+    # Subtest: Home and Back from ambient/Clock return to dashboard with Clock focus restored
+    ok 12 - Home and Back from ambient/Clock return to dashboard with Clock focus restored
+      ---
+      duration_ms: 49557.213524
+      type: 'test'
+      ...
+# Warning: Activity not started, its current task has been brought to the front
+    # Subtest: foreground recovery refreshes device time and the rail remains usable
+    ok 13 - foreground recovery refreshes device time and the rail remains usable
+      ---
+      duration_ms: 22640.347513
+      type: 'test'
+      ...
+    # Subtest: format survives restart and dashboard/Clock share the same saved preference
+    ok 14 - format survives restart and dashboard/Clock share the same saved preference
+      ---
+      duration_ms: 34727.452503
+      type: 'test'
+      ...
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-kq1vRE/hierarchy.zip: 1 file pushed, 0 skipped. 7.7 MB/s (2353 bytes in 0.000s)
+    # Subtest: reduced motion preserves single-label focus, compact timeout, Home and ambient controls
+    ok 15 - reduced motion preserves single-label focus, compact timeout, Home and ambient controls
+      ---
+      duration_ms: 42901.378934
+      type: 'test'
+      ...
+    1..15
+ok 1 - shared adaptive rail and existing Timer/Clock regressions on Android TV
+  ---
+  duration_ms: 582731.807638
+  type: 'test'
+  ...
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-MqVZAy/hierarchy.zip: 1 file pushed, 0 skipped. 7.8 MB/s (2353 bytes in 0.000s)
+# Subtest: Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer
+ok 2 - Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer
+  ---
+  duration_ms: 102098.246947
+  type: 'test'
+  ...
+# Warning: Activity not started, intent has been delivered to currently running top-most instance.
+# Warning: Activity not started, intent has been delivered to currently running top-most instance.
+# Warning: Activity not started, intent has been delivered to currently running top-most instance.
+# Subtest: direct cross-utility rail navigation preserves the same running Timer session
+ok 3 - direct cross-utility rail navigation preserves the same running Timer session
+  ---
+  duration_ms: 154726.538389
+  type: 'test'
+  ...
+# Subtest: bright/dark local image fixtures preserve single-label contrast, full rail and device clock
+ok 4 - bright/dark local image fixtures preserve single-label contrast, full rail and device clock
+  ---
+  duration_ms: 29559.078656
+  type: 'test'
+  ...
+1..4
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 869357.475261

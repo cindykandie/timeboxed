@@ -1,0 +1,314 @@
+› Using --device TimeBoxed-TV-1080p
+› Building app...
+Using src/app as the root directory for Expo Router.
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+| (node:35641) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:35641) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:35641) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:35641) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:35641) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:35641) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+ WARN  Attempted to import the module "/Users/cindykandie/timeboxed/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags" which is not listed in the "exports" of "/Users/cindykandie/timeboxed/node_modules/react-native" under the requested subpath "./src/private/featureflags/ReactNativeFeatureFlags". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.
+Android Bundled 20425ms node_modules/expo-router/entry.js (1255 modules)
+Writing bundle output to: /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/q6ln33zpmd/index.js
+Copying 33 asset files
+Done writing bundle output
+Configuration on demand is an incubating feature.
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-module-gradle-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-module-gradle-plugin:classes UP-TO-DATE
+> Task :expo-module-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :app
+WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.newDsl=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+ ℹ️  [33mApplying gradle plugin[0m '[32mexpo-max-sdk-override-plugin[0m'
+  [expo-max-sdk-override-plugin] This plugin will find all permissions declared with `android:maxSdkVersion`. If there exists a declaration with the `android:maxSdkVersion` annotation and another one without, the plugin will remove the annotation from the final merged manifest. In order to see a log with the changes run a clean build of the app.
+WARNING: API 'applicationVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling applicationVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: API 'testVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling testVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: API 'unitTestVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling unitTestVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+> Configure project :
+[32m[ExpoRootProject][0m The Kotlin Gradle plugin used by this build is [32m2.2.10[0m, but the version catalog declares [33m2.2.0[0m. Using the plugin version.
+[32m[ExpoRootProject][0m Using the following versions:
+  - buildTools:  [32m37.0.0[0m
+  - minSdk:      [32m24[0m
+  - compileSdk:  [32m37[0m
+  - targetSdk:   [32m36[0m
+  - ndk:         [32m27.1.12297006[0m
+  - kotlin:      [32m2.2.10[0m
+  - ksp:         [32m2.2.10-2.0.2[0m
+
+> Configure project :expo-modules-core
+[expo-modules-core] Ignoring prebuilt libs: built for RN 0.88.1, installed RN 0.87.1 - building from source
+
+> Configure project :expo
+WARNING: API 'libraryVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling libraryVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+Using expo modules
+  - [32mexpo-dom-webview[0m (58.0.2)
+  - [32mexpo-log-box[0m (58.0.15)
+  - [32mexpo-constants[0m (58.0.15)
+  - [32mexpo-modules-core[0m (58.0.30)
+  - [33m[📦][0m [32mexpo-asset[0m (58.0.20)
+  - [33m[📦][0m [32mexpo-file-system[0m (58.0.13)
+  - [33m[📦][0m [32mexpo-font[0m (58.0.11)
+  - [33m[📦][0m [32mexpo-keep-awake[0m (58.0.3)
+  - [33m[📦][0m [32mexpo-linking[0m (58.0.16)
+  - [33m[📦][0m [32mexpo-router[0m (58.0.30)
+  - [33m[📦][0m [32mexpo-status-bar[0m (58.0.4)
+
+
+> Task :expo-dom-webview:preBuild UP-TO-DATE
+> Task :expo-log-box:preBuild UP-TO-DATE
+> Task :expo-modules-core:preBuild UP-TO-DATE
+> Task :expo-dom-webview:preReleaseBuild UP-TO-DATE
+> Task :expo-log-box:preReleaseBuild UP-TO-DATE
+> Task :react-native-masked-view_masked-view:preBuild UP-TO-DATE
+> Task :expo-modules-core:preReleaseBuild UP-TO-DATE
+> Task :react-native-masked-view_masked-view:preReleaseBuild UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :expo-modules-core:unpackExpoModulesV2Cpp UP-TO-DATE
+> Task :react-native-safe-area-context:mergeReleaseJniLibFolders
+> Task :expo-dom-webview:mergeReleaseJniLibFolders
+> Task :expo-log-box:mergeReleaseJniLibFolders
+> Task :react-native-masked-view_masked-view:mergeReleaseJniLibFolders
+> Task :expo-dom-webview:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-safe-area-context:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo-log-box:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-masked-view_masked-view:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo-log-box:copyReleaseJniLibsProjectOnly
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectOnly
+> Task :expo-dom-webview:copyReleaseJniLibsProjectOnly
+> Task :react-native-masked-view_masked-view:copyReleaseJniLibsProjectOnly
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-dom-webview:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-screens:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-screens:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+> Task :expo-dom-webview:generateReleaseResources FROM-CACHE
+> Task :react-native-masked-view_masked-view:generateReleaseResources FROM-CACHE
+> Task :react-native-safe-area-context:generateReleaseBuildConfig
+> Task :react-native-safe-area-context:generateReleaseResources FROM-CACHE
+> Task :react-native-masked-view_masked-view:packageReleaseResources
+> Task :react-native-masked-view_masked-view:processReleaseNavigationResources FROM-CACHE
+> Task :expo-dom-webview:packageReleaseResources
+> Task :expo-dom-webview:processReleaseNavigationResources FROM-CACHE
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :expo-dom-webview:parseReleaseLocalResources FROM-CACHE
+> Task :react-native-safe-area-context:processReleaseNavigationResources FROM-CACHE
+> Task :react-native-safe-area-context:parseReleaseLocalResources FROM-CACHE
+> Task :expo-dom-webview:generateReleaseRFile FROM-CACHE
+> Task :expo-dom-webview:javaPreCompileRelease FROM-CACHE
+> Task :expo-log-box:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateReleaseRFile FROM-CACHE
+> Task :expo-log-box:generateReleaseBuildConfig
+> Task :expo-log-box:generateReleaseResources FROM-CACHE
+> Task :react-native-masked-view_masked-view:parseReleaseLocalResources FROM-CACHE
+> Task :react-native-masked-view_masked-view:generateReleaseRFile FROM-CACHE
+> Task :expo-log-box:packageReleaseResources
+> Task :react-native-masked-view_masked-view:javaPreCompileRelease FROM-CACHE
+> Task :expo-log-box:processReleaseNavigationResources FROM-CACHE
+> Task :expo-log-box:parseReleaseLocalResources FROM-CACHE
+> Task :expo-log-box:generateReleaseRFile FROM-CACHE
+> Task :expo-log-box:javaPreCompileRelease FROM-CACHE
+> Task :expo-dom-webview:prepareReleaseArtProfile
+> Task :expo-log-box:prepareReleaseArtProfile
+> Task :expo:generateInlineModules
+> Task :expo:generatePackagesList
+> Task :expo:preBuild
+> Task :expo:preReleaseBuild
+> Task :expo:mergeReleaseJniLibFolders
+> Task :expo:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo:copyReleaseJniLibsProjectOnly
+> Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-dom-webview:writeReleaseAarMetadata
+> Task :expo:generateReleaseResources FROM-CACHE
+> Task :expo-log-box:writeReleaseAarMetadata
+> Task :expo-dom-webview:extractDeepLinksRelease FROM-CACHE
+> Task :expo:packageReleaseResources
+> Task :expo:processReleaseNavigationResources FROM-CACHE
+> Task :expo:parseReleaseLocalResources FROM-CACHE
+> Task :expo:generateReleaseRFile FROM-CACHE
+> Task :expo-dom-webview:processReleaseManifest FROM-CACHE
+> Task :expo:javaPreCompileRelease FROM-CACHE
+> Task :expo:prepareReleaseArtProfile
+> Task :expo-log-box:extractDeepLinksRelease FROM-CACHE
+> Task :expo:writeReleaseAarMetadata
+> Task :expo:extractDeepLinksRelease FROM-CACHE
+> Task :expo-log-box:processReleaseManifest FROM-CACHE
+> Task :expo-dom-webview:mapReleaseSourceSetPaths
+> Task :expo:processReleaseManifest FROM-CACHE
+> Task :expo:mapReleaseSourceSetPaths
+> Task :expo:compileReleaseLibraryResources
+> Task :expo-dom-webview:compileReleaseLibraryResources
+> Task :expo:generateReleaseAssets UP-TO-DATE
+> Task :expo-log-box:mapReleaseSourceSetPaths
+> Task :expo:mergeReleaseAssets
+> Task :expo-dom-webview:generateReleaseAssets UP-TO-DATE
+> Task :expo-log-box:compileReleaseLibraryResources FROM-CACHE
+> Task :expo-log-box:generateReleaseAssets UP-TO-DATE
+> Task :expo-dom-webview:mergeReleaseAssets
+> Task :expo-log-box:mergeReleaseAssets
+> Task :expo-dom-webview:extractProguardFiles
+> Task :expo:extractProguardFiles
+> Task :expo-log-box:extractProguardFiles
+> Task :expo-dom-webview:prepareLintJarForPublish
+> Task :expo:prepareLintJarForPublish
+> Task :expo-log-box:prepareLintJarForPublish
+> Task :expo:stripReleaseDebugSymbols NO-SOURCE
+> Task :expo:copyReleaseJniLibsProjectAndLocalJars
+> Task :expo:extractDeepLinksForAarRelease
+> Task :expo-dom-webview:checkReleaseAarMetadata
+> Task :expo-dom-webview:stripReleaseDebugSymbols NO-SOURCE
+> Task :expo-dom-webview:copyReleaseJniLibsProjectAndLocalJars
+> Task :expo-dom-webview:extractDeepLinksForAarRelease FROM-CACHE
+> Task :expo-dom-webview:writeReleaseLintModelMetadata
+> Task :expo:writeReleaseLintModelMetadata
+> Task :expo-constants:createReleaseExpoConfig
+> Task :expo-constants:preBuild UP-TO-DATE
+> Task :expo-constants:preReleaseBuild
+> Task :expo-constants:mergeReleaseJniLibFolders
+> Task :expo-constants:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo-constants:copyReleaseJniLibsProjectOnly
+> Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-constants:generateReleaseResources FROM-CACHE
+> Task :expo-constants:packageReleaseResources
+> Task :expo-constants:processReleaseNavigationResources FROM-CACHE
+> Task :expo-constants:parseReleaseLocalResources FROM-CACHE
+> Task :expo-constants:generateReleaseRFile FROM-CACHE
+> Task :expo-constants:javaPreCompileRelease FROM-CACHE
+> Task :expo-constants:prepareReleaseArtProfile
+> Task :expo-constants:writeReleaseAarMetadata
+> Task :expo-constants:extractDeepLinksRelease FROM-CACHE
+> Task :expo-constants:processReleaseManifest FROM-CACHE
+> Task :expo-constants:mapReleaseSourceSetPaths
+> Task :expo-constants:compileReleaseLibraryResources FROM-CACHE
+> Task :expo-constants:generateReleaseAssets UP-TO-DATE
+> Task :expo-constants:mergeReleaseAssets
+> Task :expo-constants:extractProguardFiles
+> Task :expo-constants:prepareLintJarForPublish
+> Task :expo-constants:checkReleaseAarMetadata
+> Task :expo-constants:stripReleaseDebugSymbols NO-SOURCE
+> Task :expo-constants:copyReleaseJniLibsProjectAndLocalJars
+> Task :expo-constants:extractDeepLinksForAarRelease FROM-CACHE
+> Task :expo-constants:writeReleaseLintModelMetadata
+> Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :expo-modules-core:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-safe-area-context:compileReleaseKotlin
+> Task :react-native-masked-view_masked-view:compileReleaseJavaWithJavac
+> Task :expo-log-box:checkReleaseAarMetadata
+Error: /Users/cindykandie/timeboxed/android/gradlew app:assembleRelease -x lint -x test --configure-on-demand --build-cache -PreactNativeDevServerPort=8081 exited with non-zero code: 143
+Error: /Users/cindykandie/timeboxed/android/gradlew app:assembleRelease -x lint -x test --configure-on-demand --build-cache -PreactNativeDevServerPort=8081 exited with non-zero code: 143
+    at ChildProcess.completionListener (/Users/cindykandie/timeboxed/node_modules/@expo/spawn-async/build/spawnAsync.js:113:23)
+    at Object.onceWrapper (node:events:623:26)
+    at ChildProcess.emit (node:events:508:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+    ...
+    at spawnAsync (/Users/cindykandie/timeboxed/node_modules/@expo/spawn-async/build/spawnAsync.js:9:23)
+    at spawnGradleAsync (/Users/cindykandie/timeboxed/node_modules/expo/node_modules/@expo/cli/build/src/start/platforms/android/gradle.js:115:48)
+    at assembleAsync (/Users/cindykandie/timeboxed/node_modules/expo/node_modules/@expo/cli/build/src/start/platforms/android/gradle.js:88:18)
+    at runAndroidAsync (/Users/cindykandie/timeboxed/node_modules/expo/node_modules/@expo/cli/build/src/run/android/runAndroidAsync.js:100:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

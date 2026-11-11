@@ -1,0 +1,65 @@
+
+> timeboxed@1.0.0 test:tv
+> node --experimental-strip-types --test --test-concurrency=1 tests/tv/*.test.ts
+
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-1tScac/hierarchy.zip: 1 file pushed, 0 skipped. 7.8 MB/s (2353 bytes in 0.000s)
+(node:12081) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/calculator.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Calculator performs real remote keypad calculations and preserves its session across navigation (43787.25202ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-1zm2EI/hierarchy.zip: 1 file pushed, 0 skipped. 9.3 MB/s (2353 bytes in 0.000s)
+(node:12265) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/countdown.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-2Mn9KE/hierarchy.zip: 1 file pushed, 0 skipped. 11.0 MB/s (2353 bytes in 0.000s)
+Warning: Activity not started, its current task has been brought to the front
+✔ Countdown remote creation, editing, multiple events, restart/foreground accuracy and confirmed deletion (264395.341196ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-qoXoBR/hierarchy.zip: 1 file pushed, 0 skipped. 8.6 MB/s (2353 bytes in 0.000s)
+(node:13365) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ shared adaptive rail and existing Timer/Clock regressions on Android TV
+  ✔ dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons (4957.553965ms)
+  ✔ Up/Down transfers exactly one label through all six items without shifting the rail (29352.953658ms)
+  ✔ pointer focus transfers the single label instead of revealing a second hovered label (21474.399847ms)
+  ✔ 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus (27309.299784ms)
+  ✔ Calculator, Countdown and World Clocks have the same rail and predictable Back (49865.883097ms)
+  ✔ Timer retains all seven presets and compact/focused rail states without overlap (48467.218407ms)
+  ✔ Home preserves a running Timer; reopening reconciles its deadline (22967.559835ms)
+  ✔ Back preserves a paused Timer; Resume/Reset controls remain reachable (17481.180165ms)
+  ✔ Clock retains local time/date/timezone and has non-overlapping compact/focused rail states (62464.712298ms)
+  ✔ remote 12/24-hour settings still select, format and save the chosen value (13982.107353ms)
+  ✔ ambient keeps the complete rail visible, updates time, and Select restores Clock content focus (26778.379754ms)
+  ✔ Home and Back from ambient/Clock return to dashboard with Clock focus restored (47760.598194ms)
+Warning: Activity not started, its current task has been brought to the front
+  ✔ foreground recovery refreshes device time and the rail remains usable (22351.59493ms)
+  ✔ format survives restart and dashboard/Clock share the same saved preference (34200.763028ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-6Tdded/hierarchy.zip: 1 file pushed, 0 skipped. 6.0 MB/s (2353 bytes in 0.000s)
+  ✔ reduced motion preserves single-label focus, compact timeout, Home and ambient controls (43723.647174ms)
+✔ shared adaptive rail and existing Timer/Clock regressions on Android TV (492634.117154ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-N0DHDH/hierarchy.zip: 1 file pushed, 0 skipped. 7.5 MB/s (2353 bytes in 0.000s)
+✔ Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer (99996.972905ms)
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+✔ direct cross-utility rail navigation preserves the same running Timer session (154426.71569ms)
+✔ bright/dark local image fixtures preserve single-label contrast, full rail and device clock (29513.793414ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-HRq8me/hierarchy.zip: 1 file pushed, 0 skipped. 4.7 MB/s (2353 bytes in 0.000s)
+(node:16605) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/worldClocks.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-LuL9Dw/hierarchy.zip: 1 file pushed, 0 skipped. 9.8 MB/s (2353 bytes in 0.000s)
+Warning: Activity not started, its current task has been brought to the front
+✔ World Clocks remote add/remove, IANA times, shared formats, restart, foreground and Home/Back (210175.902572ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1296086.553949

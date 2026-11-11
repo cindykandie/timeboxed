@@ -1,0 +1,46 @@
+Using src/app as the root directory for Expo Router.
+Starting Metro Bundler
+
+| (node:38770) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38770) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38770) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38770) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38770) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38770) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+ WARN  Attempted to import the module "/Users/cindykandie/timeboxed/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags" which is not listed in the "exports" of "/Users/cindykandie/timeboxed/node_modules/react-native" under the requested subpath "./src/private/featureflags/ReactNativeFeatureFlags". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.
+Android Bundled 58898ms node_modules/expo-router/entry.js (1258 modules)
+
+› Assets (31):
+assets/fonts/cabinet-grotesk/Fonts/TTF/CabinetGrotesk-Variable.ttf (99KB)
+assets/fonts/clash-display/Fonts/TTF/ClashDisplay-Variable.ttf (88KB)
+assets/fonts/satoshi/Fonts/TTF/Satoshi-Variable.ttf (127KB)
+assets/fonts/satoshi/Fonts/TTF/Satoshi-VariableItalic.ttf (130KB)
+assets/tv-banner.png (6.7KB)
+node_modules/expo-router/assets/arrow_down.png (9.5KB)
+node_modules/expo-router/assets/arrow_right.xml (307B)
+node_modules/expo-router/assets/checkmark.xml (312B)
+node_modules/expo-router/assets/error.png (469B)
+node_modules/expo-router/assets/file.png (138B)
+node_modules/expo-router/assets/forward.png (188B)
+node_modules/expo-router/assets/pkg.png (364B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.png (653B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon.png (4 variations | 152B)
+node_modules/expo-router/assets/react-navigation/elements/clear-icon.png (4 variations | 425B)
+node_modules/expo-router/assets/react-navigation/elements/close-icon.png (4 variations | 235B)
+node_modules/expo-router/assets/react-navigation/elements/search-icon.png (4 variations | 599B)
+node_modules/expo-router/assets/sitemap.png (465B)
+node_modules/expo-router/assets/unmatched.png (4.8KB)
+
+› android bundles (1):
+_expo/static/js/android/entry-6d13077bcc85f7f13944586b76f36aae.hbc (2.7MB)
+
+› Files (1):
+metadata.json (2.1KB)
+
+Exported: dist

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TimeBoxed font choices</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:24px;background:#151821;color:#EEECE8;font:16px/1.5 system-ui,sans-serif}h1{font-size:24px;font-weight:500;margin:0 0 8px}p{color:#A4A7B0}nav{display:flex;gap:12px;margin:24px 0}button{font:inherit;padding:10px 20px;background:#202530;color:#EEECE8;border:1px solid transparent;border-radius:8px;cursor:pointer}button[aria-pressed=true],button:focus-visible{border-color:#A8BFA5;outline:none}main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}h2{font-size:18px;font-weight:500;margin:0 0 8px}img{width:100%;height:auto;display:block}a{color:#A9C5D8}@media(max-width:800px){main{grid-template-columns:1fr}}
+</style>
+<h1>TimeBoxed font choices</h1><p>Satoshi is the default. All four choices are available in Settings. These are actual 1920 × 1080 Android TV screenshots; click to inspect full size.</p>
+<nav aria-label="Screen"><button data-screen="settings" onclick="show('settings')">Settings</button><button data-screen="timer" onclick="show('timer')">Timer · 25:00</button></nav><main></main>
+<p>Satoshi supports tabular numerals. Clash Display and Cabinet Grotesk retain proportional digits. <a href="../../docs/font-settings.md">Inventory, licences and validation</a>.</p>
+<script>
+const families=[['satoshi','Satoshi'],['clash-display','Clash Display'],['cabinet-grotesk','Cabinet Grotesk'],['system','System']];
+function show(screen){for(const button of document.querySelectorAll('button'))button.setAttribute('aria-pressed',String(button.dataset.screen===screen));const main=document.querySelector('main');main.replaceChildren();for(const[id,label]of families){const article=document.createElement('article'),heading=document.createElement('h2'),link=document.createElement('a'),image=document.createElement('img');heading.textContent=label;link.href=`${screen}-${id}.png`;link.target='_blank';link.rel='noopener';image.src=link.href;image.alt=`${label} ${screen}, Android TV at 1080p`;image.width=1920;image.height=1080;link.append(image);article.append(heading,link);main.append(article)}}show('settings');
+</script></html>

@@ -1,0 +1,735 @@
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-module-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-module-gradle-plugin:classes UP-TO-DATE
+> Task :expo-module-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :app
+WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.newDsl=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+ ℹ️  [33mApplying gradle plugin[0m '[32mexpo-max-sdk-override-plugin[0m'
+  [expo-max-sdk-override-plugin] This plugin will find all permissions declared with `android:maxSdkVersion`. If there exists a declaration with the `android:maxSdkVersion` annotation and another one without, the plugin will remove the annotation from the final merged manifest. In order to see a log with the changes run a clean build of the app.
+WARNING: API 'applicationVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling applicationVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: API 'testVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling testVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: API 'unitTestVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling unitTestVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+> Configure project :
+[32m[ExpoRootProject][0m The Kotlin Gradle plugin used by this build is [32m2.2.10[0m, but the version catalog declares [33m2.2.0[0m. Using the plugin version.
+[32m[ExpoRootProject][0m Using the following versions:
+  - buildTools:  [32m37.0.0[0m
+  - minSdk:      [32m24[0m
+  - compileSdk:  [32m37[0m
+  - targetSdk:   [32m36[0m
+  - ndk:         [32m27.1.12297006[0m
+  - kotlin:      [32m2.2.10[0m
+  - ksp:         [32m2.2.10-2.0.2[0m
+
+> Configure project :expo-modules-core
+[expo-modules-core] Ignoring prebuilt libs: built for RN 0.88.1, installed RN 0.87.1 - building from source
+
+> Configure project :expo
+WARNING: API 'libraryVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling libraryVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+Using expo modules
+  - [32mexpo-dom-webview[0m (58.0.2)
+  - [32mexpo-log-box[0m (58.0.15)
+  - [32mexpo-constants[0m (58.0.15)
+  - [32mexpo-modules-core[0m (58.0.30)
+  - [33m[📦][0m [32mexpo-asset[0m (58.0.20)
+  - [33m[📦][0m [32mexpo-file-system[0m (58.0.13)
+  - [33m[📦][0m [32mexpo-font[0m (58.0.11)
+  - [33m[📦][0m [32mexpo-keep-awake[0m (58.0.3)
+  - [33m[📦][0m [32mexpo-linking[0m (58.0.16)
+  - [33m[📦][0m [32mexpo-router[0m (58.0.30)
+  - [33m[📦][0m [32mexpo-status-bar[0m (58.0.4)
+
+
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+> Task :expo-constants:preBuild UP-TO-DATE
+> Task :expo-dom-webview:preBuild UP-TO-DATE
+> Task :expo-log-box:preBuild UP-TO-DATE
+> Task :expo-modules-core:preBuild UP-TO-DATE
+> Task :react-native-masked-view_masked-view:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-screens:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-screens:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :expo:generateInlineModules
+> Task :expo:generatePackagesList UP-TO-DATE
+> Task :expo:preBuild
+> Task :app:preBuild
+> Task :app:preReleaseBuild
+> Task :expo-constants:createReleaseExpoConfig
+> Task :expo:preReleaseBuild
+> Task :expo:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :expo:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :expo-constants:preReleaseBuild
+> Task :expo-constants:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :expo-constants:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo-constants:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :expo-dom-webview:preReleaseBuild UP-TO-DATE
+> Task :expo-dom-webview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :expo-dom-webview:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo-dom-webview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :expo-log-box:preReleaseBuild UP-TO-DATE
+> Task :expo-log-box:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :expo-log-box:mergeReleaseNativeLibs NO-SOURCE
+> Task :expo-log-box:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :expo-modules-core:preReleaseBuild UP-TO-DATE
+> Task :expo-modules-core:unpackExpoModulesV2Cpp UP-TO-DATE
+> Task :app:configureCMakeRelWithDebInfo[x86_64]
+> Task :expo-modules-core:configureCMakeRelWithDebInfo[x86_64]
+> Task :app:buildCMakeRelWithDebInfo[x86_64]
+> Task :expo-modules-core:buildCMakeRelWithDebInfo[x86_64]
+C/C++: ninja: Entering directory `/Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/.cxx/RelWithDebInfo/5u433v5y/x86_64'
+C/C++: In file included from /Users/cindykandie/timeboxed/node_modules/expo-modules-core/common/cpp/EventEmitter.cpp:5:
+C/C++: /Users/cindykandie/timeboxed/node_modules/react-native/ReactCommon/cxxreact/ErrorUtils.h:10:2: warning: Deprecated: use <jserrorhandler/ErrorUtils.h> instead. [-W#warnings]
+C/C++:    10 | #warning Deprecated: use <jserrorhandler/ErrorUtils.h> instead.
+C/C++:       |  ^
+C/C++: 1 warning generated.
+C/C++: /Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/cpp/fabric/ExpoComponentDescriptorFactory.cpp:18:5: warning: 'RawPropsParser' is deprecated [-Wdeprecated-declarations]
+C/C++:    18 |     react::RawPropsParser(/*useRawPropsJsiValue=*/true)
+C/C++:       |     ^
+C/C++: /Users/cindykandie/timeboxed/node_modules/react-native/ReactCommon/react/renderer/core/RawPropsParser.h:31:5: note: 'RawPropsParser' has been explicitly marked deprecated here
+C/C++:    31 |   [[deprecated]] explicit RawPropsParser(bool /* ignored */) : RawPropsParser() {}
+C/C++:       |     ^
+C/C++: 1 warning generated.
+
+> Task :expo-modules-core:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseJniLibFolders
+> Task :react-native-masked-view_masked-view:preReleaseBuild UP-TO-DATE
+> Task :react-native-masked-view_masked-view:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :react-native-masked-view_masked-view:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-masked-view_masked-view:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+> Task :react-native-safe-area-context:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :react-native-safe-area-context:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+> Task :expo-modules-core:mergeReleaseNativeLibs
+> Task :expo-modules-core:copyReleaseJniLibsProjectOnly
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateReleaseBuildConfig UP-TO-DATE
+> Task :react-native-safe-area-context:generateReleaseResources UP-TO-DATE
+> Task :react-native-safe-area-context:packageReleaseResources UP-TO-DATE
+> Task :react-native-safe-area-context:processReleaseNavigationResources UP-TO-DATE
+> Task :react-native-safe-area-context:parseReleaseLocalResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateReleaseRFile UP-TO-DATE
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-safe-area-context:compileReleaseKotlin
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86_64]
+> Task :react-native-screens:mergeReleaseJniLibFolders
+> Task :react-native-screens:mergeReleaseNativeLibs
+> Task :react-native-screens:copyReleaseJniLibsProjectOnly
+> Task :app:mergeReleaseNativeLibs
+
+> Task :react-native-safe-area-context:compileReleaseKotlin
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaProviderManager.kt:46:19 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:12:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:55:54 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:9:32 'class LayoutShadowNode : ReactShadowNodeImpl' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:110:61 'class NativeViewHierarchyOptimizer : Any' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+
+> Task :react-native-safe-area-context:javaPreCompileRelease
+> Task :app:stripReleaseDebugSymbols
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseNativeDebugMetadata
+> Task :react-native-screens:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-screens:generateReleaseBuildConfig
+> Task :react-native-screens:generateReleaseResources
+> Task :react-native-screens:packageReleaseResources
+> Task :react-native-screens:processReleaseNavigationResources
+> Task :react-native-screens:parseReleaseLocalResources
+> Task :react-native-screens:generateReleaseRFile
+> Task :react-native-safe-area-context:compileReleaseJavaWithJavac
+> Task :react-native-safe-area-context:mergeReleaseGeneratedProguardFiles
+> Task :react-native-safe-area-context:exportReleaseConsumerProguardFiles
+> Task :react-native-screens:javaPreCompileRelease
+> Task :react-native-masked-view_masked-view:generateReleaseResources UP-TO-DATE
+> Task :react-native-masked-view_masked-view:packageReleaseResources UP-TO-DATE
+> Task :react-native-masked-view_masked-view:processReleaseNavigationResources UP-TO-DATE
+> Task :react-native-masked-view_masked-view:parseReleaseLocalResources UP-TO-DATE
+> Task :react-native-masked-view_masked-view:generateReleaseRFile UP-TO-DATE
+> Task :react-native-masked-view_masked-view:javaPreCompileRelease UP-TO-DATE
+
+> Task :react-native-masked-view_masked-view:compileReleaseJavaWithJavac
+Note: /Users/cindykandie/timeboxed/node_modules/expo-router/node_modules/@react-native-masked-view/masked-view/android/src/main/java/org/reactnative/maskedview/RNCMaskedViewPackage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-masked-view_masked-view:mergeReleaseGeneratedProguardFiles
+> Task :react-native-masked-view_masked-view:exportReleaseConsumerProguardFiles
+> Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo:generateReleaseResources UP-TO-DATE
+> Task :expo:packageReleaseResources UP-TO-DATE
+> Task :expo:processReleaseNavigationResources UP-TO-DATE
+> Task :expo:parseReleaseLocalResources UP-TO-DATE
+> Task :expo:generateReleaseRFile UP-TO-DATE
+> Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-constants:generateReleaseResources UP-TO-DATE
+> Task :expo-constants:packageReleaseResources UP-TO-DATE
+> Task :expo-constants:processReleaseNavigationResources UP-TO-DATE
+> Task :expo-constants:parseReleaseLocalResources UP-TO-DATE
+> Task :expo-constants:generateReleaseRFile UP-TO-DATE
+> Task :expo-modules-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-modules-core:generateReleaseBuildConfig
+> Task :expo-modules-core:generateReleaseResources
+> Task :expo-modules-core:packageReleaseResources
+> Task :expo-modules-core:processReleaseNavigationResources
+> Task :expo-modules-core:parseReleaseLocalResources
+> Task :expo-modules-core:generateReleaseRFile
+> Task :react-native-screens:compileReleaseKotlin
+> Task :expo-modules-core:compileReleaseKotlin
+
+> Task :react-native-screens:compileReleaseKotlin
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:70:9 The corresponding parameter in the supertype 'BaseReactPackage' is named 'name'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:71:9 The corresponding parameter in the supertype 'BaseReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:83:17 'constructor(name: String, className: String, canOverrideExistingModule: Boolean, needsEagerInit: Boolean, hasConstants: Boolean, isCxxModule: Boolean, isTurboModule: Boolean): ReactModuleInfo' is deprecated. This constructor is deprecated and will be removed in the future. Use ReactModuleInfo(String, String, boolean, boolean, boolean, boolean)].
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:54:77 Unchecked cast of '(CoordinatorLayout.Behavior<View!>?..CoordinatorLayout.Behavior<*>?)' to 'BottomSheetBehavior<Screen>'.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:59:33 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:534:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainer.kt:73:74 'static field HIDE_NOT_ALWAYS: Int' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainer.kt:252:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainer.kt:262:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:225:37 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:242:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:258:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:327:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStack.kt:120:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:179:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:236:31 'var targetElevation: Float' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:239:13 'fun setHasOptionsMenu(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:450:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:457:22 'fun onPrepareOptionsMenu(p0: Menu): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:460:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:465:22 'fun onCreateOptionsMenu(p0: Menu, p1: MenuInflater): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:199:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:209:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:48:42 'fun replaceSystemWindowInsets(p0: Int, p1: Int, p2: Int, p3: Int): @NonNull() WindowInsetsCompat' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:49:39 'val systemWindowInsetLeft: Int' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:51:39 'val systemWindowInsetRight: Int' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:52:39 'val systemWindowInsetBottom: Int' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreensModule.kt:104:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarView.kt:137:29 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:66:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:67:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:71:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:72:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/common/event/BaseEventEmitter.kt:12:38 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:64:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:65:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:69:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:70:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:11:8 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:39:33 'fun getEventDispatcher(context: ReactContext, uiManagerType: Int): EventDispatcher?' is deprecated. UIManagerType is no longer needed.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:44:13 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetHostViewManager.kt:38:9 The corresponding parameter in the supertype 'ViewGroupManager' is named 'view'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/tabs/host/TabsHostViewManager.kt:44:9 The corresponding parameter in the supertype 'ViewGroupManager' is named 'view'. This may cause problems when calling this function with named arguments.
+w: file:///Users/cindykandie/timeboxed/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/safearea/SafeAreaView.kt:143:45 'fun consumeDisplayCutout(): @NonNull() WindowInsetsCompat' is deprecated. Deprecated in Java.
+
+> Task :react-native-screens:compileReleaseJavaWithJavac
+> Task :react-native-screens:mergeReleaseGeneratedProguardFiles
+> Task :react-native-screens:exportReleaseConsumerProguardFiles
+> Task :expo-modules-core:javaPreCompileRelease
+> Task :expo-constants:javaPreCompileRelease UP-TO-DATE
+> Task :expo-dom-webview:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-dom-webview:generateReleaseResources UP-TO-DATE
+> Task :expo-dom-webview:packageReleaseResources UP-TO-DATE
+> Task :expo-dom-webview:processReleaseNavigationResources UP-TO-DATE
+> Task :expo-dom-webview:parseReleaseLocalResources UP-TO-DATE
+> Task :expo-dom-webview:generateReleaseRFile UP-TO-DATE
+> Task :expo-dom-webview:javaPreCompileRelease UP-TO-DATE
+> Task :expo-log-box:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-log-box:generateReleaseBuildConfig UP-TO-DATE
+> Task :expo-log-box:generateReleaseResources UP-TO-DATE
+> Task :expo-log-box:packageReleaseResources UP-TO-DATE
+> Task :expo-log-box:processReleaseNavigationResources UP-TO-DATE
+> Task :expo-log-box:parseReleaseLocalResources UP-TO-DATE
+> Task :expo-log-box:generateReleaseRFile UP-TO-DATE
+> Task :expo-log-box:javaPreCompileRelease UP-TO-DATE
+> Task :expo:javaPreCompileRelease UP-TO-DATE
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateReleaseBuildConfig
+
+> Task :app:createBundleReleaseJsAndAssets
+Using src/app as the root directory for Expo Router.
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+| (node:38688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+
+> Task :expo-modules-core:compileReleaseKotlin
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/CppType.kt:42:23 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/JavaCallback.kt:38:10 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/JavaCallback.kt:96:45 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:49:15 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:64:30 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:66:14 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:74:39 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:75:7 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:80:37 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:86:47 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:92:23 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:92:43 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:95:41 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:105:14 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ColorCompat.kt:115:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:7:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:245:55 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:247:19 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ReturnType.kt:6:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ReturnType.kt:45:5 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/TypeConverterProvider.kt:19:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/TypeConverterProvider.kt:254:7 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+
+> Task :app:createBundleReleaseJsAndAssets
+| (node:38688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:38688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+
+> Task :expo-modules-core:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :expo-modules-core:bundleLibCompileToJarRelease
+
+> Task :app:createBundleReleaseJsAndAssets
+ WARN  Attempted to import the module "/Users/cindykandie/timeboxed/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags" which is not listed in the "exports" of "/Users/cindykandie/timeboxed/node_modules/react-native" under the requested subpath "./src/private/featureflags/ReactNativeFeatureFlags". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.
+
+> Task :expo-constants:compileReleaseKotlin
+> Task :expo-constants:compileReleaseJavaWithJavac NO-SOURCE
+> Task :expo-constants:bundleLibCompileToJarRelease
+
+> Task :expo-dom-webview:compileReleaseKotlin
+w: file:///Users/cindykandie/timeboxed/node_modules/@expo/dom-webview/android/src/main/java/expo/modules/webview/DomWebView.kt:200:16 'var allowFileAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/@expo/dom-webview/android/src/main/java/expo/modules/webview/DomWebView.kt:254:18 'fun executeOnJavaScriptThread(runnable: Runnable): Unit' is deprecated. Use RuntimeContext.schedule instead.
+
+> Task :expo-dom-webview:compileReleaseJavaWithJavac NO-SOURCE
+> Task :expo-dom-webview:bundleLibCompileToJarRelease
+> Task :expo-log-box:compileReleaseKotlin
+
+> Task :app:createBundleReleaseJsAndAssets
+Android Bundled 34655ms node_modules/expo-router/entry.js (1258 modules)
+Writing bundle output to: /Users/cindykandie/timeboxed/android/app/build/generated/assets/react/release/index.android.bundle
+Writing sourcemap output to: /Users/cindykandie/timeboxed/android/app/build/intermediates/sourcemaps/react/release/index.android.bundle.packager.map
+Copying 33 asset files
+Done writing bundle output
+Done writing sourcemap output
+
+> Task :expo-log-box:compileReleaseJavaWithJavac
+> Task :expo-log-box:bundleLibCompileToJarRelease
+
+> Task :expo:compileReleaseKotlin
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/ExpoModulesPackage.kt:34:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:22:8 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:103:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:103:43 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:104:21 'val reactInstanceManager: ReactInstanceManager' is deprecated. Deprecated in Java.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/fetch/ExpoFetchModule.kt:15:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/fetch/ExpoFetchModule.kt:33:39 'constructor(reactContext: ReactContext): ForwardingCookieHandler' is deprecated. Use the default constructor.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/fetch/ExpoFetchModule.kt:111:27 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/fetch/NativeResponse.kt:44:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/cindykandie/timeboxed/node_modules/expo/android/src/main/java/expo/modules/fetch/NativeResponse.kt:46:11 'fun deallocate(): Unit' is deprecated. Use sharedObjectDidRelease() instead.
+
+> Task :expo:compileReleaseJavaWithJavac NO-SOURCE
+> Task :expo:mergeReleaseGeneratedProguardFiles
+> Task :expo:exportReleaseConsumerProguardFiles
+> Task :expo-log-box:mergeReleaseGeneratedProguardFiles
+> Task :expo-log-box:exportReleaseConsumerProguardFiles
+> Task :expo-modules-core:mergeReleaseGeneratedProguardFiles
+> Task :expo-modules-core:exportReleaseConsumerProguardFiles
+> Task :expo-dom-webview:mergeReleaseGeneratedProguardFiles
+> Task :expo-dom-webview:exportReleaseConsumerProguardFiles
+> Task :expo-constants:mergeReleaseGeneratedProguardFiles
+> Task :expo-constants:exportReleaseConsumerProguardFiles
+> Task :expo:bundleLibCompileToJarRelease
+> Task :react-native-masked-view_masked-view:bundleLibCompileToJarRelease
+> Task :react-native-safe-area-context:bundleLibCompileToJarRelease
+> Task :react-native-screens:bundleLibCompileToJarRelease
+> Task :expo:prepareReleaseArtProfile UP-TO-DATE
+> Task :expo-constants:prepareReleaseArtProfile UP-TO-DATE
+> Task :expo-dom-webview:prepareReleaseArtProfile UP-TO-DATE
+> Task :expo-log-box:prepareReleaseArtProfile UP-TO-DATE
+> Task :expo-modules-core:prepareReleaseArtProfile
+> Task :react-native-masked-view_masked-view:prepareReleaseArtProfile
+> Task :react-native-safe-area-context:prepareReleaseArtProfile
+> Task :react-native-screens:prepareReleaseArtProfile
+> Task :expo:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-constants:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-dom-webview:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-log-box:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-modules-core:writeReleaseAarMetadata
+> Task :react-native-masked-view_masked-view:writeReleaseAarMetadata
+> Task :react-native-safe-area-context:writeReleaseAarMetadata
+> Task :react-native-screens:writeReleaseAarMetadata
+> Task :expo:extractDeepLinksRelease UP-TO-DATE
+> Task :expo:processReleaseManifest UP-TO-DATE
+> Task :expo-constants:extractDeepLinksRelease UP-TO-DATE
+> Task :expo-constants:processReleaseManifest UP-TO-DATE
+> Task :expo-dom-webview:extractDeepLinksRelease UP-TO-DATE
+> Task :expo-dom-webview:processReleaseManifest UP-TO-DATE
+> Task :expo-log-box:extractDeepLinksRelease UP-TO-DATE
+> Task :expo-log-box:processReleaseManifest UP-TO-DATE
+> Task :expo-modules-core:extractDeepLinksRelease
+
+> Task :expo-modules-core:processReleaseManifest
+/Users/cindykandie/timeboxed/node_modules/expo-modules-core/android/src/main/AndroidManifest.xml:8:9-11:45 Warning:
+	meta-data#com.facebook.soloader.enabled@android:value was tagged at AndroidManifest.xml:8 to replace other declarations but no other declaration present
+
+> Task :react-native-masked-view_masked-view:extractDeepLinksRelease
+> Task :react-native-masked-view_masked-view:processReleaseManifest
+> Task :react-native-safe-area-context:extractDeepLinksRelease
+
+> Task :react-native-safe-area-context:processReleaseManifest
+package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: /Users/cindykandie/timeboxed/node_modules/react-native-safe-area-context/android/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: /Users/cindykandie/timeboxed/node_modules/react-native-safe-area-context/android/src/main/AndroidManifest.xml.
+
+> Task :react-native-screens:extractDeepLinksRelease
+> Task :react-native-screens:processReleaseManifest
+> Task :expo:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :expo:compileReleaseLibraryResources UP-TO-DATE
+> Task :expo-constants:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :expo-constants:compileReleaseLibraryResources UP-TO-DATE
+> Task :expo-dom-webview:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :expo-dom-webview:compileReleaseLibraryResources UP-TO-DATE
+> Task :expo-log-box:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :expo-log-box:compileReleaseLibraryResources UP-TO-DATE
+> Task :expo-modules-core:mapReleaseSourceSetPaths
+> Task :expo-modules-core:compileReleaseLibraryResources
+> Task :react-native-masked-view_masked-view:mapReleaseSourceSetPaths
+> Task :react-native-masked-view_masked-view:compileReleaseLibraryResources
+> Task :react-native-safe-area-context:mapReleaseSourceSetPaths
+> Task :react-native-safe-area-context:compileReleaseLibraryResources
+> Task :react-native-screens:mapReleaseSourceSetPaths
+> Task :react-native-screens:compileReleaseLibraryResources
+> Task :expo:bundleLibRuntimeToJarRelease
+> Task :expo-constants:bundleLibRuntimeToJarRelease
+> Task :expo-dom-webview:bundleLibRuntimeToJarRelease
+> Task :expo-log-box:bundleLibRuntimeToJarRelease
+> Task :expo-modules-core:bundleLibRuntimeToJarRelease
+> Task :react-native-masked-view_masked-view:bundleLibRuntimeToJarRelease
+> Task :react-native-safe-area-context:bundleLibRuntimeToJarRelease
+> Task :react-native-screens:bundleLibRuntimeToJarRelease
+> Task :expo:processReleaseJavaRes
+> Task :expo-constants:processReleaseJavaRes
+> Task :expo-dom-webview:processReleaseJavaRes
+> Task :expo-log-box:processReleaseJavaRes
+> Task :expo-modules-core:processReleaseJavaRes
+> Task :react-native-masked-view_masked-view:processReleaseJavaRes NO-SOURCE
+> Task :react-native-safe-area-context:processReleaseJavaRes
+> Task :react-native-screens:processReleaseJavaRes
+> Task :expo:generateReleaseAssets UP-TO-DATE
+> Task :expo:mergeReleaseAssets UP-TO-DATE
+> Task :expo-constants:generateReleaseAssets UP-TO-DATE
+> Task :expo-constants:mergeReleaseAssets UP-TO-DATE
+> Task :expo-dom-webview:generateReleaseAssets UP-TO-DATE
+> Task :expo-dom-webview:mergeReleaseAssets UP-TO-DATE
+> Task :expo-log-box:generateReleaseAssets UP-TO-DATE
+> Task :expo-log-box:mergeReleaseAssets UP-TO-DATE
+> Task :expo-modules-core:generateReleaseAssets UP-TO-DATE
+> Task :expo-modules-core:mergeReleaseAssets
+> Task :react-native-masked-view_masked-view:generateReleaseAssets UP-TO-DATE
+> Task :react-native-masked-view_masked-view:mergeReleaseAssets
+> Task :react-native-safe-area-context:generateReleaseAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeReleaseAssets
+> Task :react-native-screens:generateReleaseAssets UP-TO-DATE
+> Task :react-native-screens:mergeReleaseAssets
+> Task :expo:createFullJarRelease
+> Task :expo:extractProguardFiles UP-TO-DATE
+> Task :expo-constants:createFullJarRelease
+> Task :expo-constants:extractProguardFiles UP-TO-DATE
+> Task :expo-modules-core:createFullJarRelease
+> Task :expo-modules-core:extractProguardFiles
+> Task :expo-modules-core:generateReleaseLintModel
+> Task :expo-modules-core:prepareLintJarForPublish
+> Task :expo-constants:generateReleaseLintModel
+> Task :expo-constants:prepareLintJarForPublish UP-TO-DATE
+> Task :expo-dom-webview:createFullJarRelease
+> Task :expo-dom-webview:extractProguardFiles UP-TO-DATE
+> Task :expo-dom-webview:generateReleaseLintModel
+> Task :expo-dom-webview:prepareLintJarForPublish UP-TO-DATE
+> Task :expo-log-box:createFullJarRelease
+> Task :expo-log-box:extractProguardFiles UP-TO-DATE
+> Task :expo-log-box:generateReleaseLintModel
+> Task :expo-log-box:prepareLintJarForPublish UP-TO-DATE
+> Task :expo:generateReleaseLintModel
+> Task :expo:prepareLintJarForPublish UP-TO-DATE
+> Task :react-native-masked-view_masked-view:createFullJarRelease
+> Task :react-native-masked-view_masked-view:extractProguardFiles
+> Task :react-native-masked-view_masked-view:generateReleaseLintModel
+> Task :react-native-masked-view_masked-view:prepareLintJarForPublish
+> Task :react-native-safe-area-context:createFullJarRelease
+> Task :react-native-safe-area-context:extractProguardFiles
+> Task :react-native-safe-area-context:generateReleaseLintModel
+> Task :react-native-safe-area-context:prepareLintJarForPublish
+> Task :react-native-screens:createFullJarRelease
+> Task :react-native-screens:extractProguardFiles
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:processReleaseNavigationResources
+> Task :app:parseReleaseLocalResources
+> Task :app:generateReleaseRFile
+> Task :react-native-screens:generateReleaseLintModel
+> Task :app:javaPreCompileRelease
+> Task :app:mergeReleaseArtProfile
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:compileReleaseNavigationResources
+
+> Task :app:compileReleaseKotlin
+w: file:///Users/cindykandie/timeboxed/android/app/src/main/java/com/timeboxed/app/MainActivity.kt:36:20 'constructor(activity: ReactActivity, mainComponentName: String, fabricEnabled: Boolean): DefaultReactActivityDelegate' is deprecated. Creating DefaultReactActivityDelegate with flags is deprecated.
+w: file:///Users/cindykandie/timeboxed/android/app/src/main/java/com/timeboxed/app/MainApplication.kt:33:31 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+
+> Task :react-native-screens:prepareLintJarForPublish
+> Task :react-native-safe-area-context:checkReleaseAarMetadata
+> Task :react-native-safe-area-context:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-safe-area-context:extractDeepLinksForAarRelease
+> Task :app:mergeReleaseResources
+> Task :react-native-safe-area-context:extractReleaseAnnotations
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+
+> Task :app:processReleaseMainManifest
+/Users/cindykandie/timeboxed/android/app/src/main/AndroidManifest.xml Warning:
+	provider#expo.modules.filesystem.FileSystemFileProvider@android:authorities was tagged at AndroidManifest.xml:0 to replace other declarations but no other declaration present
+
+> Task :app:expoReleaseOverrideMaxSdkConflicts
+[33m---------- Expo Max Sdk Override Plugin ----------[0m
+[32m>>> No 'android:maxSdkVersion' conflicts found[0m
+[33m--------------------------------------------------[0m
+
+> Task :app:processReleaseManifest
+> Task :app:processReleaseManifestForPackage
+> Task :app:processReleaseResources
+> Task :app:expandReleaseArtProfileWildcards
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseGeneratedProguardFiles
+> Task :app:processReleaseJavaRes
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeReleaseStartupProfile
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:minifyReleaseWithR8
+> Task :app:generateReleaseLintVitalReportModel
+> Task :react-native-safe-area-context:mergeReleaseConsumerProguardFiles
+> Task :react-native-safe-area-context:mergeReleaseJavaResource
+> Task :react-native-safe-area-context:syncReleaseLibJars
+> Task :react-native-safe-area-context:bundleReleaseLocalLintAar
+> Task :react-native-screens:checkReleaseAarMetadata
+> Task :react-native-screens:stripReleaseDebugSymbols
+> Task :react-native-screens:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-screens:extractDeepLinksForAarRelease
+> Task :react-native-screens:extractReleaseAnnotations
+> Task :react-native-screens:mergeReleaseConsumerProguardFiles
+> Task :react-native-screens:mergeReleaseJavaResource
+> Task :react-native-screens:syncReleaseLibJars
+> Task :react-native-screens:bundleReleaseLocalLintAar
+> Task :react-native-masked-view_masked-view:checkReleaseAarMetadata
+> Task :react-native-masked-view_masked-view:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-masked-view_masked-view:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-masked-view_masked-view:extractDeepLinksForAarRelease
+> Task :react-native-masked-view_masked-view:extractReleaseAnnotations
+> Task :react-native-masked-view_masked-view:mergeReleaseConsumerProguardFiles
+> Task :react-native-masked-view_masked-view:mergeReleaseJavaResource
+> Task :react-native-masked-view_masked-view:syncReleaseLibJars
+> Task :react-native-masked-view_masked-view:bundleReleaseLocalLintAar
+> Task :expo:checkReleaseAarMetadata
+> Task :expo:stripReleaseDebugSymbols NO-SOURCE
+> Task :expo:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :expo:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :expo:extractReleaseAnnotations
+> Task :expo:mergeReleaseConsumerProguardFiles
+> Task :expo:mergeReleaseJavaResource
+> Task :expo:syncReleaseLibJars
+> Task :expo:bundleReleaseLocalLintAar
+> Task :expo-log-box:checkReleaseAarMetadata
+> Task :expo-log-box:stripReleaseDebugSymbols NO-SOURCE
+> Task :expo-log-box:copyReleaseJniLibsProjectAndLocalJars
+> Task :expo-log-box:extractDeepLinksForAarRelease
+> Task :expo-log-box:extractReleaseAnnotations
+> Task :expo-log-box:mergeReleaseConsumerProguardFiles
+> Task :expo-log-box:mergeReleaseJavaResource
+> Task :expo-log-box:syncReleaseLibJars
+> Task :expo-log-box:bundleReleaseLocalLintAar
+> Task :expo-modules-core:checkReleaseAarMetadata
+> Task :expo-modules-core:stripReleaseDebugSymbols
+> Task :expo-modules-core:copyReleaseJniLibsProjectAndLocalJars
+> Task :expo-modules-core:extractDeepLinksForAarRelease
+> Task :expo-modules-core:extractReleaseAnnotations
+> Task :expo-modules-core:mergeReleaseConsumerProguardFiles
+> Task :expo-modules-core:mergeReleaseJavaResource
+> Task :expo-modules-core:syncReleaseLibJars
+> Task :expo-modules-core:bundleReleaseLocalLintAar
+> Task :expo-dom-webview:checkReleaseAarMetadata UP-TO-DATE
+> Task :expo-dom-webview:stripReleaseDebugSymbols NO-SOURCE
+> Task :expo-dom-webview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :expo-dom-webview:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :expo-dom-webview:extractReleaseAnnotations
+> Task :expo-dom-webview:mergeReleaseConsumerProguardFiles
+> Task :expo-dom-webview:mergeReleaseJavaResource
+> Task :expo-dom-webview:syncReleaseLibJars
+> Task :expo-dom-webview:bundleReleaseLocalLintAar
+> Task :expo-constants:checkReleaseAarMetadata UP-TO-DATE
+> Task :expo-constants:stripReleaseDebugSymbols NO-SOURCE
+> Task :expo-constants:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :expo-constants:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :expo-constants:extractReleaseAnnotations
+> Task :expo-constants:mergeReleaseConsumerProguardFiles
+> Task :expo-constants:mergeReleaseJavaResource
+> Task :expo-constants:syncReleaseLibJars
+> Task :expo-constants:bundleReleaseLocalLintAar
+> Task :expo-constants:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :expo-dom-webview:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :expo-log-box:writeReleaseLintModelMetadata
+> Task :expo-modules-core:writeReleaseLintModelMetadata
+> Task :expo:lintVitalAnalyzeRelease SKIPPED
+> Task :expo:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :expo-constants:lintVitalAnalyzeRelease SKIPPED
+> Task :expo-dom-webview:lintVitalAnalyzeRelease SKIPPED
+> Task :expo-log-box:lintVitalAnalyzeRelease SKIPPED
+> Task :expo-modules-core:lintVitalAnalyzeRelease SKIPPED
+> Task :react-native-masked-view_masked-view:lintVitalAnalyzeRelease SKIPPED
+> Task :react-native-masked-view_masked-view:writeReleaseLintModelMetadata
+> Task :react-native-safe-area-context:lintVitalAnalyzeRelease SKIPPED
+> Task :react-native-safe-area-context:writeReleaseLintModelMetadata
+> Task :react-native-screens:lintVitalAnalyzeRelease SKIPPED
+> Task :react-native-screens:writeReleaseLintModelMetadata
+> Task :app:lintVitalAnalyzeRelease
+> Task :expo:generateReleaseLintVitalModel
+> Task :expo-constants:generateReleaseLintVitalModel
+> Task :expo-dom-webview:generateReleaseLintVitalModel
+> Task :expo-log-box:generateReleaseLintVitalModel
+> Task :expo-modules-core:generateReleaseLintVitalModel
+> Task :react-native-masked-view_masked-view:generateReleaseLintVitalModel
+> Task :react-native-safe-area-context:generateReleaseLintVitalModel
+> Task :react-native-screens:generateReleaseLintVitalModel
+> Task :app:lintVitalReportRelease
+> Task :app:lintVitalRelease
+> Task :app:optimizeReleaseResources
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+
+[Incubating] Problems report is available at: file:///Users/cindykandie/timeboxed/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 13m 13s
+389 actionable tasks: 256 executed, 133 up-to-date

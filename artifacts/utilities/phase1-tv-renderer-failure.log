@@ -1,0 +1,346 @@
+
+> timeboxed@1.0.0 test:tv
+> node --experimental-strip-types --test --test-concurrency=1 tests/tv/*.test.ts
+
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-zNgS8R/hierarchy.zip: 1 file pushed, 0 skipped. 8.6 MB/s (2353 bytes in 0.000s)
+(node:55196) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/calculator.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Calculator performs real remote keypad calculations and preserves its session across navigation (50971.485911ms)
+/var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-7NNJ6O/hierarchy.zip: 1 file pushed, 0 skipped. 11.6 MB/s (2353 bytes in 0.000s)
+(node:55370) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ shared adaptive rail and existing Timer/Clock regressions on Android TV
+  ✔ dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons (6425.621484ms)
+  ✔ Up/Down transfers exactly one label through all six items without shifting the rail (41440.58685ms)
+  ✔ pointer focus transfers the single label instead of revealing a second hovered label (30582.864023ms)
+  ✔ 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus (32439.478347ms)
+  ✔ Calculator, Countdown and World Clocks have lightweight routes with the same rail and predictable Back (67242.255015ms)
+error: closed
+adb: device offline
+adb: device offline
+adb: device offline
+adb: device offline
+adb: device offline
+adb: device 'emulator-5554' not found
+adb: device 'emulator-5554' not found
+adb: error: failed to get feature set: device 'emulator-5554' not found
+adb: error: failed to get feature set: device 'emulator-5554' not found
+adb: device 'emulator-5554' not found
+  ✔ Timer retains all seven presets and compact/focused rail states without overlap (55248.284762ms)
+  ✖ Home preserves a running Timer; reopening reconciles its deadline (47802.675333ms)
+  ✖ Back preserves a paused Timer; Resume/Reset controls remain reachable (13834.919905ms)
+  ✖ Clock retains local time/date/timezone and has non-overlapping compact/focused rail states (60.290265ms)
+  ✖ remote 12/24-hour settings still select, format and save the chosen value (46.378091ms)
+  ✖ ambient keeps the complete rail visible, updates time, and Select restores Clock content focus (53.297679ms)
+  ✖ Home and Back from ambient/Clock return to dashboard with Clock focus restored (31.712484ms)
+  ✖ foreground recovery refreshes device time and the rail remains usable (34.173805ms)
+  ✖ format survives restart and dashboard/Clock share the same saved preference (30.124479ms)
+  ✖ reduced motion preserves single-label focus, compact timeout, Home and ambient controls (27.603987ms)
+✖ shared adaptive rail and existing Timer/Clock regressions on Android TV (316534.129918ms)
+✖ Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer (2917.438793ms)
+✖ direct cross-utility rail navigation preserves the same running Timer session (2616.455558ms)
+✖ bright/dark local image fixtures preserve single-label contrast, full rail and device clock (24.074064ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 7
+ℹ fail 13
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 373706.757739
+
+✖ failing tests:
+
+test at tests/tv/dashboard.test.ts:233:11
+✖ Home preserves a running Timer; reopening reconciles its deadline (47802.675333ms)
+  Error: spawnSync adb ETIMEDOUT
+      at Object.spawnSync (node:internal/child_process:1120:20)
+      at spawnSync (node:child_process:911:24)
+      at execFileSync (node:child_process:954:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at snapshot (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:21:18)
+      at expectFocus (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:47:15)
+      at home (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:120:17)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:236:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25) {
+    errno: -60,
+    code: 'ETIMEDOUT',
+    syscall: 'spawnSync adb',
+    path: 'adb',
+    spawnargs: [ '-s', 'emulator-5554', 'shell', 'uiautomator', 'runtest', 'timeboxed-hierarchy.jar', '-c', 'TimeBoxedHierarchyDump', '-s' ],
+    error: Error: spawnSync adb ETIMEDOUT
+        at Object.spawnSync (node:internal/child_process:1120:20)
+        at spawnSync (node:child_process:911:24)
+        at execFileSync (node:child_process:954:15)
+        at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+        at snapshot (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:21:18)
+        at expectFocus (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:47:15)
+        at home (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:120:17)
+        at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:236:5)
+        at Test.runInAsyncScope (node:async_hooks:214:14)
+        at Test.run (node:internal/test_runner/test:1106:25),
+    status: null,
+    signal: 'SIGTERM',
+    output: [ null, '', '' ],
+    pid: 56222,
+    stdout: '',
+    stderr: ''
+  }
+
+test at tests/tv/dashboard.test.ts:242:11
+✖ Back preserves a paused Timer; Resume/Reset controls remain reachable (13834.919905ms)
+  Error: Command failed: adb -s emulator-5554 shell input keyevent KEYCODE_DPAD_CENTER
+  error: closed
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at key (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:15:31)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:243:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17) {
+    status: 1,
+    signal: null,
+    output: [ null, '', 'error: closed\n' ],
+    pid: 56229,
+    stdout: '',
+    stderr: 'error: closed\n'
+  }
+
+test at tests/tv/dashboard.test.ts:251:11
+✖ Clock retains local time/date/timezone and has non-overlapping compact/focused rail states (60.290265ms)
+  Error: Command failed: adb -s emulator-5554 reverse tcp:8081 tcp:8081
+  adb: device offline
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at launch (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:131:3)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:254:19)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17) {
+    status: 1,
+    signal: null,
+    output: [ null, '', 'adb: device offline\n' ],
+    pid: 56236,
+    stdout: '',
+    stderr: 'adb: device offline\n'
+  }
+
+test at tests/tv/dashboard.test.ts:272:11
+✖ remote 12/24-hour settings still select, format and save the chosen value (46.378091ms)
+  Error: Command failed: adb -s emulator-5554 shell input keyevent KEYCODE_DPAD_LEFT
+  adb: device offline
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at key (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:15:31)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:273:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17) {
+    status: 1,
+    signal: null,
+    output: [ null, '', 'adb: device offline\n' ],
+    pid: 56244,
+    stdout: '',
+    stderr: 'adb: device offline\n'
+  }
+
+test at tests/tv/dashboard.test.ts:280:11
+✖ ambient keeps the complete rail visible, updates time, and Select restores Clock content focus (53.297679ms)
+  Error: Command failed: adb -s emulator-5554 shell input keyevent KEYCODE_DPAD_RIGHT
+  adb: device offline
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at key (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:15:31)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:281:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17) {
+    status: 1,
+    signal: null,
+    output: [ null, '', 'adb: device offline\n' ],
+    pid: 56251,
+    stdout: '',
+    stderr: 'adb: device offline\n'
+  }
+
+test at tests/tv/dashboard.test.ts:289:11
+✖ Home and Back from ambient/Clock return to dashboard with Clock focus restored (31.712484ms)
+  Error: Command failed: adb -s emulator-5554 shell input keyevent KEYCODE_DPAD_CENTER
+  adb: device offline
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at key (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:15:31)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:290:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17) {
+    status: 1,
+    signal: null,
+    output: [ null, '', 'adb: device offline\n' ],
+    pid: 56258,
+    stdout: '',
+    stderr: 'adb: device offline\n'
+  }
+
+test at tests/tv/dashboard.test.ts:297:11
+✖ foreground recovery refreshes device time and the rail remains usable (34.173805ms)
+  Error: Command failed: adb -s emulator-5554 shell input keyevent KEYCODE_DPAD_CENTER
+  adb: device offline
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at key (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:15:31)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:298:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17) {
+    status: 1,
+    signal: null,
+    output: [ null, '', 'adb: device offline\n' ],
+    pid: 56265,
+    stdout: '',
+    stderr: 'adb: device offline\n'
+  }
+
+test at tests/tv/dashboard.test.ts:305:11
+✖ format survives restart and dashboard/Clock share the same saved preference (30.124479ms)
+  Error: Command failed: adb -s emulator-5554 shell input keyevent KEYCODE_DPAD_CENTER
+  adb: device 'emulator-5554' not found
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at key (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:15:31)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:306:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17) {
+    status: 1,
+    signal: null,
+    output: [ null, '', "adb: device 'emulator-5554' not found\n" ],
+    pid: 56272,
+    stdout: '',
+    stderr: "adb: device 'emulator-5554' not found\n"
+  }
+
+test at tests/tv/dashboard.test.ts:315:11
+✖ reduced motion preserves single-label focus, compact timeout, Home and ambient controls (27.603987ms)
+  Error: Command failed: adb -s emulator-5554 shell settings get global transition_animation_scale
+  adb: device 'emulator-5554' not found
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:316:22)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17)
+      at TestContext.test (node:internal/test_runner/test:378:20) {
+    status: 1,
+    signal: null,
+    output: [ null, '', "adb: device 'emulator-5554' not found\n" ],
+    pid: 56279,
+    stdout: '',
+    stderr: "adb: device 'emulator-5554' not found\n"
+  }
+
+test at tests/tv/dashboard.test.ts:332:1
+✖ Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer (2917.438793ms)
+  Error: Command failed: adb -s emulator-5554 push /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-YMxO5F/hierarchy.zip /data/local/tmp/timeboxed-hierarchy.jar
+  adb: error: failed to get feature set: device 'emulator-5554' not found
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:333:43
+      at prepareHierarchyDump (file:///Users/cindykandie/timeboxed/tests/tv/hierarchy.ts:27:5)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:333:3)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25) {
+    status: 1,
+    signal: null,
+    output: [ null, '', "adb: error: failed to get feature set: device 'emulator-5554' not found\n" ],
+    pid: 56298,
+    stdout: '',
+    stderr: "adb: error: failed to get feature set: device 'emulator-5554' not found\n"
+  }
+
+test at tests/tv/dashboard.test.ts:344:1
+✖ direct cross-utility rail navigation preserves the same running Timer session (2616.455558ms)
+  Error: Command failed: adb -s emulator-5554 push /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-ZVxAal/hierarchy.zip /data/local/tmp/timeboxed-hierarchy.jar
+  adb: error: failed to get feature set: device 'emulator-5554' not found
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:345:43
+      at prepareHierarchyDump (file:///Users/cindykandie/timeboxed/tests/tv/hierarchy.ts:27:5)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:345:3)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25) {
+    status: 1,
+    signal: null,
+    output: [ null, '', "adb: error: failed to get feature set: device 'emulator-5554' not found\n" ],
+    pid: 56308,
+    stdout: '',
+    stderr: "adb: error: failed to get feature set: device 'emulator-5554' not found\n"
+  }
+
+test at tests/tv/dashboard.test.ts:359:1
+✖ bright/dark local image fixtures preserve single-label contrast, full rail and device clock (24.074064ms)
+  Error: Command failed: adb -s emulator-5554 shell am start -a android.intent.action.VIEW -d timeboxed:///?artworkPreview=bright -n com.timeboxed.app/.MainActivity
+  adb: device 'emulator-5554' not found
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at checkExecSyncError (node:child_process:925:11)
+      at execFileSync (node:child_process:961:15)
+      at adb (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:14:36)
+      at TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:361:5)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19) {
+    status: 1,
+    signal: null,
+    output: [ null, '', "adb: device 'emulator-5554' not found\n" ],
+    pid: 56315,
+    stdout: '',
+    stderr: "adb: device 'emulator-5554' not found\n"
+  }

@@ -1,0 +1,220 @@
+TAP version 13
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-KLY9Rz/hierarchy.zip: 1 file pushed, 0 skipped. 6.1 MB/s (2353 bytes in 0.000s)
+# (node:27317) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/calculator.test.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Calculator performs real remote keypad calculations and preserves its session across navigation
+ok 1 - Calculator performs real remote keypad calculations and preserves its session across navigation
+  ---
+  duration_ms: 55852.240446
+  type: 'test'
+  ...
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-uiWHAs/hierarchy.zip: 1 file pushed, 0 skipped. 9.0 MB/s (2353 bytes in 0.000s)
+# (node:27402) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/countdown.test.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-cqEy33/hierarchy.zip: 1 file pushed, 0 skipped. 8.6 MB/s (2353 bytes in 0.000s)
+# Warning: Activity not started, its current task has been brought to the front
+# Subtest: Countdown remote creation, editing, multiple events, restart/foreground accuracy and confirmed deletion
+ok 2 - Countdown remote creation, editing, multiple events, restart/foreground accuracy and confirmed deletion
+  ---
+  duration_ms: 336001.858346
+  type: 'test'
+  ...
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-nO4bgV/hierarchy.zip: 1 file pushed, 0 skipped. 7.4 MB/s (2353 bytes in 0.000s)
+# (node:27883) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: shared adaptive rail and existing Timer/Clock regressions on Android TV
+    # Subtest: dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons
+    ok 1 - dashboard fills 1080p with local image, one bottom-left clock and six transparent navigation icons
+      ---
+      duration_ms: 6600.26467
+      type: 'test'
+      ...
+    # Subtest: Up/Down transfers exactly one label through all six items without shifting the rail
+    ok 2 - Up/Down transfers exactly one label through all six items without shifting the rail
+      ---
+      duration_ms: 30995.743099
+      type: 'test'
+      ...
+    # Subtest: pointer focus transfers the single label instead of revealing a second hovered label
+    not ok 3 - pointer focus transfers the single label instead of revealing a second hovered label
+      ---
+      duration_ms: 15497.533766
+      type: 'test'
+      location: '/Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:182:11'
+      failureType: 'testCodeFailure'
+      error: |-
+        Expected values to be strictly equal:
+        
+        'Timer' !== 'Clock'
+        
+      code: 'ERR_ASSERTION'
+      name: 'AssertionError'
+      expected: 'Clock'
+      actual: 'Timer'
+      operator: 'strictEqual'
+      stack: |-
+        expectRail (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:75:12)
+        TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:186:5)
+        Test.runInAsyncScope (node:async_hooks:214:14)
+        Test.run (node:internal/test_runner/test:1106:25)
+        Test.start (node:internal/test_runner/test:1003:17)
+        TestContext.test (node:internal/test_runner/test:378:20)
+        TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:182:11)
+        async Test.run (node:internal/test_runner/test:1113:7)
+        async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      ...
+    # Subtest: 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus
+    ok 4 - 10-second inactivity hides every label, shrinks icons and keeps all six focusable; boundary input wakes focus
+      ---
+      duration_ms: 29446.952793
+      type: 'test'
+      ...
+    # Subtest: Calculator, Countdown and World Clocks have the same rail and predictable Back
+    ok 5 - Calculator, Countdown and World Clocks have the same rail and predictable Back
+      ---
+      duration_ms: 54517.721013
+      type: 'test'
+      ...
+    # Subtest: Timer retains all seven presets and compact/focused rail states without overlap
+    ok 6 - Timer retains all seven presets and compact/focused rail states without overlap
+      ---
+      duration_ms: 144800.364585
+      type: 'test'
+      ...
+    # Subtest: Home preserves a running Timer; reopening reconciles its deadline
+    ok 7 - Home preserves a running Timer; reopening reconciles its deadline
+      ---
+      duration_ms: 24914.981351
+      type: 'test'
+      ...
+    # Subtest: Back preserves a paused Timer; Resume/Reset controls remain reachable
+    not ok 8 - Back preserves a paused Timer; Resume/Reset controls remain reachable
+      ---
+      duration_ms: 11564.41227
+      type: 'test'
+      location: '/Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:249:11'
+      failureType: 'testCodeFailure'
+      error: |-
+        The expression evaluated to a falsy value:
+        
+          assert.ok(hasText(nodes, 'TAKE A BREATH'))
+        
+      code: 'ERR_ASSERTION'
+      name: 'AssertionError'
+      expected: true
+      actual: false
+      operator: '=='
+      stack: |-
+        TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:254:12)
+        Test.runInAsyncScope (node:async_hooks:214:14)
+        Test.run (node:internal/test_runner/test:1106:25)
+        Test.start (node:internal/test_runner/test:1003:17)
+        TestContext.test (node:internal/test_runner/test:378:20)
+        TestContext.<anonymous> (file:///Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:249:11)
+        async Test.run (node:internal/test_runner/test:1113:7)
+        async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      ...
+    # Subtest: Clock retains local time/date/timezone and has non-overlapping compact/focused rail states
+    ok 9 - Clock retains local time/date/timezone and has non-overlapping compact/focused rail states
+      ---
+      duration_ms: 69430.88576
+      type: 'test'
+      ...
+    # Subtest: remote 12/24-hour settings still select, format and save the chosen value
+    ok 10 - remote 12/24-hour settings still select, format and save the chosen value
+      ---
+      duration_ms: 16367.43438
+      type: 'test'
+      ...
+    # Subtest: ambient keeps the complete rail visible, updates time, and Select restores Clock content focus
+    ok 11 - ambient keeps the complete rail visible, updates time, and Select restores Clock content focus
+      ---
+      duration_ms: 31618.863775
+      type: 'test'
+      ...
+    # Subtest: Home and Back from ambient/Clock return to dashboard with Clock focus restored
+    ok 12 - Home and Back from ambient/Clock return to dashboard with Clock focus restored
+      ---
+      duration_ms: 53780.812597
+      type: 'test'
+      ...
+# Warning: Activity not started, its current task has been brought to the front
+    # Subtest: foreground recovery refreshes device time and the rail remains usable
+    ok 13 - foreground recovery refreshes device time and the rail remains usable
+      ---
+      duration_ms: 25073.055739
+      type: 'test'
+      ...
+    # Subtest: format survives restart and dashboard/Clock share the same saved preference
+    ok 14 - format survives restart and dashboard/Clock share the same saved preference
+      ---
+      duration_ms: 38551.205841
+      type: 'test'
+      ...
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-LOaKwF/hierarchy.zip: 1 file pushed, 0 skipped. 6.9 MB/s (2353 bytes in 0.000s)
+    # Subtest: reduced motion preserves single-label focus, compact timeout, Home and ambient controls
+    ok 15 - reduced motion preserves single-label focus, compact timeout, Home and ambient controls
+      ---
+      duration_ms: 46610.179987
+      type: 'test'
+      ...
+    1..15
+not ok 3 - shared adaptive rail and existing Timer/Clock regressions on Android TV
+  ---
+  duration_ms: 621328.58785
+  type: 'test'
+  location: '/Users/cindykandie/timeboxed/tests/tv/dashboard.test.ts:154:1'
+  failureType: 'subtestsFailed'
+  error: '2 subtests failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-msOVUR/hierarchy.zip: 1 file pushed, 0 skipped. 8.0 MB/s (2353 bytes in 0.000s)
+# Subtest: Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer
+ok 4 - Custom Duration inherits the full rail; Home and Back discard its draft and restore Timer
+  ---
+  duration_ms: 113621.945319
+  type: 'test'
+  ...
+# Warning: Activity not started, intent has been delivered to currently running top-most instance.
+# Warning: Activity not started, intent has been delivered to currently running top-most instance.
+# Warning: Activity not started, intent has been delivered to currently running top-most instance.
+# Subtest: direct cross-utility rail navigation preserves the same running Timer session
+ok 5 - direct cross-utility rail navigation preserves the same running Timer session
+  ---
+  duration_ms: 170077.49896
+  type: 'test'
+  ...
+# Subtest: bright/dark local image fixtures preserve single-label contrast, full rail and device clock
+ok 6 - bright/dark local image fixtures preserve single-label contrast, full rail and device clock
+  ---
+  duration_ms: 33507.780561
+  type: 'test'
+  ...
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-9KkYk0/hierarchy.zip: 1 file pushed, 0 skipped. 7.0 MB/s (2353 bytes in 0.000s)
+# (node:29151) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/cindykandie/timeboxed/tests/tv/worldClocks.test.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /Users/cindykandie/timeboxed/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# /var/folders/hl/78pzxtc55d171qwtts9t0hfm0000gn/T/timeboxed-tv-test-vlpke2/hierarchy.zip: 1 file pushed, 0 skipped. 6.1 MB/s (2353 bytes in 0.000s)
+# Warning: Activity not started, its current task has been brought to the front
+# Subtest: World Clocks remote add/remove, IANA times, shared formats, restart, foreground and Home/Back
+ok 7 - World Clocks remote add/remove, IANA times, shared formats, restart, foreground and Home/Back
+  ---
+  duration_ms: 254041.516469
+  type: 'test'
+  ...
+1..7
+# tests 22
+# suites 0
+# pass 19
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1585961.908467

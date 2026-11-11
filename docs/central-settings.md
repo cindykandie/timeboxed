@@ -53,14 +53,15 @@ that would have no honest effect.
 - Unit tests: 60 passed, including manual persistence, elapsed-time advancement,
   Automatic recovery, version-one migration and corrupted reference recovery.
 - Android Expo/Metro export: passed.
-- Focused Android TV regression: 1 passed (337 seconds), covering category focus,
-  manual editing/save, shared format, ambient entry/exit and Automatic restoration.
-- Full Android TV suite: attempted; 16 of 26 checks completed successfully before
-  repeated ADB/UI Automator timeouts. The run exposed a real Timer-rail Up focus
-  wrap to Settings, which was fixed by pinning the top rail item's Up target.
-  A subsequent dashboard rerun passed its first 12 checks through ambient entry,
-  then the emulator automation timed out again. A final emulator restart remained
-  offline in ADB, so the remaining native checks could not be rerun reliably.
+- Expandable-navigation Android TV validation: Appearance and Clock were opened
+  with D-pad input and captured at 1920×1080 with the primary rail, secondary
+  categories and content visible together. The focused automated run reached and
+  captured Appearance, then the legacy UI Automator hierarchy helper failed while
+  moving to Timer. Clock was subsequently opened and captured using direct native
+  key events, but the complete native regression could not be reported as passing.
+- Earlier full Android TV suite: attempted; 16 of 26 checks completed successfully
+  before repeated ADB/UI Automator timeouts. That run exposed a real Timer-rail Up
+  focus wrap to Settings, which was fixed by pinning the top rail item's Up target.
 - Emulator: Android TV 1920×1080. No physical TV or Fire TV validation.
 
 Screenshots are under [`artifacts/central-settings`](../artifacts/central-settings/).
